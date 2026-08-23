@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>جولد هاوس — مجوهرات دهب فاخرة، الجيزة</title>
+<meta name="description" content="جولد هاوس — مجوهرات دهب فاخرة بعيار 18K و21K و24K. خواتم، حلقان، سلاسل وأساور، في الجيزة، مصر. فخامة في كل تفصيلة.">
+<link rel="icon" href="./images/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+
+:root{
+  --onyx:#0A0805;
+  --onyx-2:#14100A;
+  --onyx-3:#1C160E;
+  --surface:rgba(244,235,218,0.04);
+  --surface2:rgba(244,235,218,0.08);
+  --border:rgba(244,235,218,0.10);
+  --border2:rgba(244,235,218,0.20);
+  --text:#F8F2E6;
+  --text-soft:#B9AD92;
+  --gold:#C9A227;
+  --gold-light:#F0D585;
+  --gold-bright:#FFEBAE;
+  --gold-deep:#7A5D16;
+  --ivory:#F4EBDA;
+  --ivory-soft:#EFE2C8;
+  --radius:7px;
+}
+
+html{scroll-behavior:smooth;height:100%;}
+
+body{
+  font-family:'Cairo',sans-serif;
+  background:radial-gradient(ellipse 1200px 800px at 50% -10%, #1C160E 0%, #060402 60%) #060402 fixed;
+  color:var(--text);
+  overflow-x:hidden;
+  line-height:1.7;
+  min-height:100vh;
+}
+
+body.menu-open{overflow:hidden;}
+
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--onyx);}
+::-webkit-scrollbar-thumb{background:var(--gold-deep);}
+
+a{color:inherit;}
+
+/* ============ SHIMMER SIGNATURE ============ */
+@keyframes shimmerSweep{
+  0%{background-position:-200% 0;}
+  100%{background-position:200% 0;}
+}
+.shimmer{
+  background:linear-gradient(100deg, var(--gold) 20%, var(--gold-light) 40%, #fff8e6 50%, var(--gold-light) 60%, var(--gold) 80%);
+  background-size:250% 100%;
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:shimmerSweep 5s linear infinite;
+}
+
+.sparkle{
+  position:absolute;
+  color:var(--gold-light);
+  opacity:0;
+  animation:twinkle 4.5s ease-in-out infinite;
+  pointer-events:none;
+  z-index:1;
+}
+@keyframes twinkle{
+  0%,100%{opacity:0; transform:scale(0.6) rotate(0deg);}
+  50%{opacity:0.85; transform:scale(1) rotate(20deg);}
+}
+
+.hallmark-row{display:flex;gap:12px;flex-wrap:wrap;}
+.hallmark{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:7px 16px;
+  border:1px solid var(--border2);
+  border-radius:3px;
+  font-family:'Cairo',sans-serif;
+  font-size:12px;font-weight:700;letter-spacing:0.08em;
+  color:var(--gold-light);
+  background:linear-gradient(180deg, rgba(244,235,218,0.06), rgba(244,235,218,0.01));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.05), inset 0 -1px 3px rgba(0,0,0,0.3);
+  direction:ltr;
+}
+
+/* ============ NAV ============ */
+.nav-logo img{width:56px;height:56px;object-fit:cover;border-radius:50%;border:1px solid var(--border2);flex-shrink:0;}
+nav{position:fixed;top:0;width:100%;z-index:200;background:transparent;border-bottom:1px solid transparent;transition:background .35s ease,border-color .35s ease;}
+nav.stuck{background:rgba(19,14,9,0.94);border-color:var(--border);backdrop-filter:blur(12px);}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 48px;height:80px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.nav-logo{
+  font-family:'Cairo',sans-serif;
+  font-size:20px;font-weight:700;
+  color:var(--text);text-decoration:none;
+  display:flex;align-items:center;gap:14px;
+  min-width:0;
+}
+.nav-logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.nav-logo sup{font-size:9px;font-weight:600;letter-spacing:0.1em;color:var(--gold);vertical-align:super;margin-right:2px;text-transform:uppercase;font-family:'Cairo',sans-serif;}
+.nav-links{list-style:none;display:flex;gap:34px;align-items:center;}
+.nav-links a{font-size:14.5px;font-weight:600;color:var(--text-soft);text-decoration:none;transition:color .25s;font-family:'Cairo',sans-serif;}
+.nav-links a:hover{color:var(--gold-light);}
+.nav-btn{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;background:var(--gold);color:#17110a;font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;text-decoration:none;border-radius:var(--radius);transition:opacity .25s,transform .2s;flex-shrink:0;white-space:nowrap;}
+.nav-btn:hover{opacity:0.88;transform:translateY(-1px);}
+.nav-right{display:flex;align-items:center;gap:14px;flex-shrink:0;}
+
+.nav-burger{
+  display:none;
+  width:42px;height:42px;flex-shrink:0;
+  align-items:center;justify-content:center;
+  background:var(--surface2);
+  border:1px solid var(--border2);
+  border-radius:var(--radius);
+  cursor:default;
+  position:relative;
+  z-index:260;
+}
+.nav-burger span{
+  display:block;width:18px;height:1.5px;background:var(--gold-light);
+  position:relative;transition:transform .25s ease,opacity .25s ease,background .25s ease;
+}
+.nav-burger span::before,.nav-burger span::after{
+  content:'';position:absolute;right:0;width:18px;height:1.5px;background:var(--gold-light);transition:transform .25s ease,top .25s ease;
+}
+.nav-burger span::before{top:-6px;}
+.nav-burger span::after{top:6px;}
+.nav-burger.active span{background:transparent;}
+.nav-burger.active span::before{top:0;transform:rotate(45deg);}
+.nav-burger.active span::after{top:0;transform:rotate(-45deg);}
+
+/* ============ HERO ============ */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#060402;}
+.hero-bg{position:absolute;inset:0;overflow:hidden;z-index:0;}
+.hero-bg img{width:112%;height:112%;object-fit:cover;object-position:center 38%;filter:blur(1.5px) saturate(1.3) brightness(0.8) contrast(1.08);transform:scale(1.02) translate(-1%,-1%);animation:heroKenBurns 30s ease-in-out infinite alternate;}
+.hero-bg::after{content:'';position:absolute;inset:0;background:
+    linear-gradient(180deg, rgba(6,4,2,0.32) 0%, rgba(6,4,2,0.12) 38%, rgba(6,4,2,0.72) 100%),
+    radial-gradient(ellipse 950px 720px at 26% 32%, rgba(6,4,2,0.0), rgba(6,4,2,0.5) 78%);
+}
+@keyframes heroKenBurns{from{transform:scale(1.02) translate(-1%,-1%);}to{transform:scale(1.13) translate(0%,0%);}}
+.hero-grad{position:absolute;inset:0;background:radial-gradient(ellipse 900px 600px at 22% 30%, rgba(201,162,39,0.10), transparent 60%);z-index:1;pointer-events:none;}
+#gold-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:0.55;mix-blend-mode:screen;}
+.hero-vignette{position:absolute;inset:0;z-index:1;pointer-events:none;background:radial-gradient(ellipse 1100px 750px at 50% 40%, transparent 45%, #060402 82%);}
+.hero-brand{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  font-family:'Cairo',sans-serif;
+  font-size:clamp(110px,20vw,280px);
+  font-weight:800;line-height:1.15;
+  color:rgba(244,235,218,0.04);
+  z-index:1;pointer-events:none;user-select:none;filter:blur(0.2px);
+  text-align:center;
+}
+.hero-content{position:relative;z-index:2;max-width:1400px;margin:0 auto;padding:100px 40px 80px;width:100%;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;text-transform:uppercase;color:var(--gold-light);margin-bottom:28px;opacity:0;transform:translateY(20px);animation:fadeInUp 1s cubic-bezier(.4,0,.2,1) .5s forwards;font-family:'Cairo',sans-serif;}
+.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--gold);}
+.hero-h1{
+  font-family:'Amiri',serif;
+  font-size:clamp(38px,6.2vw,70px);
+  font-weight:700;line-height:1.25;letter-spacing:0;
+  color:var(--text);max-width:720px;margin-bottom:28px;
+  opacity:0;transform:translateY(30px);animation:fadeInUp 1s cubic-bezier(.4,0,.2,1) .7s forwards;
+}
+.hero-h1 .shimmer{font-style:italic;font-weight:700;}
+.hero-sub{font-size:clamp(15.5px,1.6vw,18px);font-weight:400;color:var(--text-soft);max-width:500px;line-height:1.9;margin-bottom:32px;opacity:0;transform:translateY(30px);animation:fadeInUp 1s cubic-bezier(.4,0,.2,1) .9s forwards;}
+.hero-hallmarks{margin-bottom:40px;opacity:0;transform:translateY(30px);animation:fadeInUp 1s cubic-bezier(.4,0,.2,1) 1.0s forwards;}
+.hero-ctas{display:flex;gap:20px;flex-wrap:wrap;align-items:center;opacity:0;transform:translateY(30px);animation:fadeInUp 1s cubic-bezier(.4,0,.2,1) 1.15s forwards;}
+.btn-solid{display:inline-flex;align-items:center;gap:12px;padding:16px 38px;background:linear-gradient(135deg, var(--gold-light), var(--gold));color:#1a1409;font-family:'Cairo',sans-serif;font-size:15px;font-weight:700;text-decoration:none;border-radius:var(--radius);transition:all .3s cubic-bezier(.4,0,.2,1);}
+.btn-solid:hover{filter:brightness(1.08);transform:translateY(-2px);}
+.btn-ghost{display:inline-flex;align-items:center;gap:12px;padding:15px 34px;border:1px solid var(--border2);color:var(--text);font-family:'Cairo',sans-serif;font-size:15px;font-weight:600;text-decoration:none;border-radius:var(--radius);transition:all .3s cubic-bezier(.4,0,.2,1);}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-light);transform:translateY(-2px);}
+.hero-social{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-top:28px;opacity:0;transform:translateY(30px);animation:fadeInUp 1s cubic-bezier(.4,0,.2,1) 1.25s forwards;}
+.social-chip{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border:1px solid var(--border2);border-radius:999px;color:var(--text-soft);text-decoration:none;font-size:13px;font-weight:500;background:rgba(244,235,218,0.03);transition:all .25s;}
+.social-chip:hover{color:var(--gold-light);border-color:var(--gold);background:rgba(201,162,39,0.08);transform:translateY(-1px);}
+.social-chip i{font-size:14px;}
+.social-chip.wa i{color:#25D366;}
+.social-chip.ig i{color:var(--gold-light);}
+.social-chip.tt i{color:var(--gold-light);}
+.hero-metrics{display:flex;gap:0;margin-top:56px;border-top:1px solid var(--border);padding-top:40px;opacity:0;transform:translateY(30px);animation:fadeInUp 1s cubic-bezier(.4,0,.2,1) 1.35s forwards;}
+.metric{padding-left:48px;margin-left:48px;border-left:1px solid var(--border);}
+.metric:last-child{border-left:none;margin-left:0;padding-left:0;}
+.metric-val{font-family:'Cairo',sans-serif;font-size:38px;font-weight:800;color:var(--text);line-height:1;direction:ltr;display:inline-block;}
+.metric-val em{color:var(--gold-light);font-style:normal;}
+.metric-label{font-size:12px;font-weight:600;color:var(--text-soft);text-transform:uppercase;margin-top:9px;font-family:'Cairo',sans-serif;}
+
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+
+/* ============ SHARED ============ */
+.container{max-width:1400px;margin:0 auto;padding:0 40px;}
+.section{padding:120px 0;background:transparent;}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:700;text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-family:'Cairo',sans-serif;}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--gold);}
+.section-h2{font-family:'Amiri',serif;font-size:clamp(30px,4.3vw,50px);font-weight:700;letter-spacing:0;line-height:1.3;color:var(--text);}
+.section-h2 em{font-style:italic;color:var(--gold-light);font-weight:700;}
+.section-lead{font-size:16px;color:var(--text-soft);max-width:520px;line-height:1.9;font-weight:400;margin-top:20px;}
+hr.rule{border:none;border-top:1px solid var(--border);margin:80px 0;}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1.05fr 0.95fr;gap:70px;align-items:start;}
+.about-body p{font-size:16px;color:var(--text-soft);line-height:1.95;font-weight:400;margin-bottom:20px;}
+.about-body p:last-child{margin-bottom:0;}
+.about-visual{position:relative;}
+.about-stats{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);}
+.stat-cell{background:var(--surface);padding:34px 30px;transition:background .25s;}
+.stat-cell:hover{background:var(--surface2);}
+.stat-n{font-family:'Cairo',sans-serif;font-size:40px;font-weight:800;color:var(--text);line-height:1;direction:ltr;display:inline-block;}
+.stat-n em{color:var(--gold-light);font-style:normal;font-size:24px;}
+.stat-l{font-size:12.5px;font-weight:600;color:var(--text-soft);text-transform:uppercase;margin-top:9px;font-family:'Cairo',sans-serif;}
+.about-frame{
+  position:relative;border-radius:var(--radius);overflow:hidden;
+  border:1px solid var(--border2);
+  box-shadow:0 30px 60px -20px rgba(0,0,0,0.6), inset 0 0 0 1px rgba(244,235,218,0.03);
+  margin-bottom:24px;
+}
+.about-frame img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;}
+.about-frame::after{content:'';position:absolute;inset:0;box-shadow:inset 0 -60px 70px -30px rgba(19,14,9,0.75);pointer-events:none;}
+.about-frame-tag{position:absolute;bottom:16px;right:16px;font-size:11px;text-transform:uppercase;color:var(--gold-light);background:rgba(19,14,9,0.65);padding:6px 12px;border-right:2px solid var(--gold);z-index:2;font-weight:600;}
+
+/* ============ MARQUEE ============ */
+.marquee-bar{padding:18px 0;overflow:hidden;white-space:nowrap;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+.marquee-track{display:inline-flex;animation:ticker 26s linear infinite;}
+.marquee-track span{font-family:'Amiri',serif;font-style:italic;font-size:19px;font-weight:700;color:var(--text);padding:0 36px;}
+.marquee-track .sep{color:var(--gold);font-size:11px;align-self:center;padding:0;font-family:'Cairo',sans-serif;font-style:normal;}
+@keyframes ticker{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+/* ============ COLLECTIONS (services) ============ */
+.services-intro{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;gap:20px;}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);}
+.svc{background:var(--surface);padding:46px 34px 50px;position:relative;border-bottom:3px solid transparent;transition:background .3s,border-color .3s;}
+.svc:hover{background:var(--surface2);border-color:var(--gold);}
+.svc-num{font-family:'Cairo',sans-serif;font-size:12px;font-weight:700;color:var(--gold);margin-bottom:30px;direction:ltr;text-align:right;}
+.svc-icon{width:50px;height:50px;background:rgba(201,162,39,0.1);border:1px solid rgba(201,162,39,0.35);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:24px;transition:background .3s;}
+.svc:hover .svc-icon{background:rgba(201,162,39,0.22);}
+.svc-icon i{font-size:20px;color:var(--gold-light);}
+.svc-name{font-family:'Amiri',serif;font-size:23px;font-weight:700;color:var(--text);margin-bottom:13px;line-height:1.3;}
+.svc-desc{font-size:14px;color:var(--text-soft);line-height:1.85;font-weight:400;}
+
+/* ============ PROCESS ============ */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);margin-top:56px;}
+.process-step{background:var(--surface2);padding:38px 30px;}
+.process-step-num{font-family:'Cairo',sans-serif;font-size:40px;font-weight:800;color:var(--gold);line-height:1;margin-bottom:18px;direction:ltr;text-align:right;}
+.process-step-title{font-weight:700;font-size:17px;color:var(--text);margin-bottom:10px;font-family:'Cairo',sans-serif;}
+.process-step-desc{font-size:14px;color:var(--text-soft);line-height:1.8;font-weight:400;}
+
+/* ============ TRUST ============ */
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);margin-top:56px;}
+.trust-card{background:var(--surface);padding:38px 32px;transition:background .3s;}
+.trust-card:hover{background:var(--surface2);}
+.trust-card-icon{width:44px;height:44px;border-radius:50%;background:rgba(201,162,39,0.12);border:1px solid rgba(201,162,39,0.35);display:flex;align-items:center;justify-content:center;margin-bottom:20px;}
+.trust-card-icon i{font-size:17px;color:var(--gold-light);}
+.trust-card-title{font-family:'Cairo',sans-serif;font-weight:700;font-size:16.5px;color:var(--text);margin-bottom:10px;}
+.trust-card-desc{font-size:13.5px;color:var(--text-soft);line-height:1.85;font-weight:400;}
+
+/* ============ GALLERY ============ */
+.gallery-filters{display:flex;gap:10px;flex-wrap:wrap;margin-top:36px;margin-bottom:8px;}
+.filter-btn{
+  font-family:'Cairo',sans-serif;font-size:13.5px;font-weight:600;color:var(--text-soft);
+  background:var(--surface);border:1px solid var(--border2);border-radius:999px;
+  padding:9px 22px;cursor:pointer;transition:all .25s;
+}
+.filter-btn:hover{color:var(--gold-light);border-color:var(--gold);}
+.filter-btn.active{background:var(--gold);color:#17110a;border-color:var(--gold);font-weight:700;}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-top:32px;}
+.gal{overflow:hidden;position:relative;background:var(--surface2);aspect-ratio:3/4;border:0;padding:0;display:block;width:100%;text-align:right;font-family:inherit;}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:filter .5s ease,transform .5s ease;}
+.gal:hover img{transform:scale(1.045);}
+.gal-cap{position:absolute;bottom:0;left:0;right:0;padding:16px 16px 16px;background:linear-gradient(transparent,rgba(15,11,7,0.94) 55%);}
+.gal-cap-tag{font-size:11px;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:4px;font-family:'Cairo',sans-serif;}
+.gal-cap-title{font-size:16.5px;font-weight:700;color:var(--text);font-family:'Amiri',serif;font-style:italic;}
+.gal-badge{position:absolute;top:16px;right:16px;font-size:11px;text-transform:uppercase;color:var(--ivory);background:rgba(15,11,7,0.72);padding:5px 10px;border-right:2px solid var(--gold);font-family:'Cairo',sans-serif;font-weight:600;}
+.gal-ask-btn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;padding:8px 14px;background:rgba(37,211,102,0.16);border:1px solid rgba(37,211,102,0.45);border-radius:999px;color:var(--ivory);font-family:'Cairo',sans-serif;font-size:12.5px;font-weight:700;cursor:pointer;transition:background .25s,border-color .25s,transform .2s;}
+.gal-ask-btn:hover{background:rgba(37,211,102,0.28);border-color:#25D366;transform:translateY(-1px);}
+.gal-ask-btn i{color:#25D366;font-size:13px;}
+
+/* ============ IN MOTION (product videos) ============ */
+.motion-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:56px;}
+.motion-card{position:relative;overflow:hidden;background:var(--onyx-3);aspect-ratio:4/5;border:1px solid var(--border);}
+.motion-card video{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.05) contrast(1.03);}
+.motion-badge{position:absolute;top:16px;right:16px;font-size:11px;text-transform:uppercase;color:var(--ivory);background:rgba(6,4,2,0.72);padding:5px 10px;border-right:2px solid var(--gold);font-family:'Cairo',sans-serif;font-weight:600;z-index:2;}
+.motion-toggle{position:absolute;top:14px;left:14px;width:36px;height:36px;border-radius:50%;background:rgba(6,4,2,0.6);border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;z-index:3;cursor:pointer;transition:background .25s,border-color .25s;}
+.motion-toggle:hover{background:rgba(6,4,2,0.85);border-color:var(--gold);}
+.motion-toggle i{color:var(--gold-light);font-size:13px;}
+.motion-cap{position:absolute;bottom:0;left:0;right:0;padding:22px 22px 24px;background:linear-gradient(transparent,rgba(6,4,2,0.94));z-index:2;}
+.motion-cap-tag{font-size:11px;text-transform:uppercase;color:var(--gold-light);font-weight:700;margin-bottom:4px;font-family:'Cairo',sans-serif;}
+.motion-cap-title{font-size:17.5px;font-weight:700;color:var(--text);font-family:'Amiri',serif;font-style:italic;}
+.motion-glow{position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(240,213,133,0);transition:box-shadow .35s;pointer-events:none;z-index:2;}
+.motion-card:hover .motion-glow{box-shadow:inset 0 0 0 1px rgba(240,213,133,0.4);}
+.motion-note{margin-top:22px;font-size:13px;color:var(--text-soft);opacity:0.7;font-weight:400;}
+
+/* ============ TESTIMONIALS ============ */
+.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px;align-items:start;}
+.testi-card{position:relative;background:linear-gradient(165deg, var(--onyx-3), var(--onyx-2));border:1px solid var(--border2);border-radius:14px;padding:16px 16px 18px;box-shadow:0 26px 50px -26px rgba(0,0,0,0.6);transition:transform .35s cubic-bezier(.4,0,.2,1),border-color .35s,box-shadow .35s;}
+.testi-card:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 34px 60px -24px rgba(0,0,0,0.65);}
+.testi-quote{position:absolute;top:-14px;right:22px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--gold-light),var(--gold));display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px -6px rgba(201,162,39,0.5);z-index:2;}
+.testi-quote i{color:#1a1409;font-size:13px;}
+.testi-shot{border-radius:9px;overflow:hidden;border:1px solid var(--border);background:#0b0906;aspect-ratio:2/3;}
+.testi-shot img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 12%;transition:transform .5s ease;}
+.testi-card:hover .testi-shot img{transform:scale(1.035);}
+.testi-cap{display:flex;align-items:center;justify-content:space-between;margin-top:14px;padding:0 2px;}
+.testi-stars{display:inline-flex;gap:3px;color:var(--gold-light);font-size:11px;}
+.testi-src{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--text-soft);font-weight:600;font-family:'Cairo',sans-serif;}
+.testi-src i{color:#25D366;font-size:13px;}
+.testi-note{margin-top:26px;font-size:13px;color:var(--text-soft);opacity:0.7;font-weight:400;}
+
+/* ============ CONTACT ============ */
+.contact-grid{display:grid;grid-template-columns:5fr 4fr;gap:3px;background:var(--border);margin-top:56px;border-radius:var(--radius);overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,0.55);}
+.contact-info{background:var(--surface);padding:56px 52px;position:relative;}
+.contact-info::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.5;}
+.contact-info h3{font-family:'Amiri',serif;font-size:26px;font-weight:700;color:var(--text);margin-bottom:6px;}
+.contact-info-sub{font-size:14px;color:var(--text-soft);font-weight:400;margin-bottom:36px;}
+.cinfo-row{display:flex;gap:22px;align-items:center;padding:22px 0;border-bottom:1px solid var(--border);transition:padding .25s ease;}
+.cinfo-row:first-child{padding-top:0;}
+.cinfo-row:last-child{border-bottom:none;padding-bottom:0;}
+.cinfo-row:hover{padding-right:6px;}
+.cinfo-ico{width:46px;height:46px;flex-shrink:0;border:1px solid var(--border2);background:var(--surface2);display:flex;align-items:center;justify-content:center;border-radius:50%;transition:border-color .25s,background .25s,transform .25s;}
+.cinfo-row:hover .cinfo-ico{border-color:var(--gold);transform:scale(1.06);}
+.cinfo-ico i{font-size:17px;color:var(--gold-light);}
+.cinfo-ico.wa i{color:#25D366;}
+.cinfo-label{font-size:11.5px;text-transform:uppercase;color:var(--text-soft);margin-bottom:7px;font-weight:700;font-family:'Cairo',sans-serif;}
+.cinfo-val{font-size:16px;font-weight:600;color:var(--text);line-height:1.6;font-family:'Cairo',sans-serif;}
+.cinfo-multi{display:flex;flex-direction:column;gap:10px;}
+.cinfo-link{color:var(--text);text-decoration:none;transition:color .2s,gap .2s;display:inline-flex;align-items:center;gap:8px;}
+.cinfo-link:hover{color:var(--gold-light);gap:11px;}
+.cinfo-link i{font-size:13px;color:#25D366;}
+.cinfo-link .fa-arrow-left{font-size:10px;opacity:0;transition:opacity .2s;}
+.cinfo-link:hover .fa-arrow-left{opacity:0.7;}
+.contact-cta{background:linear-gradient(160deg, var(--onyx-3), var(--onyx-2));padding:56px 52px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;}
+.contact-cta::before{content:'';position:absolute;top:-80px;left:-80px;width:260px;height:260px;background:radial-gradient(circle,rgba(201,162,39,0.16),transparent 70%);pointer-events:none;}
+.contact-cta h3{font-family:'Amiri',serif;font-size:33px;font-weight:700;color:var(--text);line-height:1.35;margin-bottom:18px;position:relative;z-index:1;}
+.contact-cta h3 em{color:var(--gold-light);font-style:italic;font-weight:700;}
+.contact-cta p{font-size:15px;color:var(--text-soft);line-height:1.9;font-weight:400;margin-bottom:36px;position:relative;z-index:1;}
+.wa-btn{display:inline-flex;align-items:center;gap:12px;padding:16px 32px;background:#25D366;color:#0e150f;font-family:'Cairo',sans-serif;font-size:15.5px;font-weight:700;text-decoration:none;border-radius:var(--radius);transition:background .25s,transform .2s,box-shadow .25s;position:relative;z-index:1;width:fit-content;box-shadow:0 10px 26px -10px rgba(37,211,102,0.55);}
+.wa-btn:hover{background:#1ec75e;transform:translateY(-2px);box-shadow:0 14px 30px -10px rgba(37,211,102,0.65);}
+.wa-btn i{font-size:20px;color:#0e150f;}
+.cta-social-row{display:flex;gap:12px;margin-top:22px;position:relative;z-index:1;flex-wrap:wrap;}
+.cta-social-row a{width:44px;height:44px;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;color:var(--gold-light);text-decoration:none;transition:all .25s;background:rgba(244,235,218,0.03);font-size:16px;}
+.cta-social-row a:hover{border-color:var(--gold);background:rgba(201,162,39,0.14);transform:translateY(-3px);}
+.cta-social-row a[aria-label="WhatsApp"] i,.cta-social-row a[aria-label="WhatsApp Group"] i{color:#25D366;}
+.trust-tags{display:flex;flex-direction:column;gap:12px;margin-top:32px;position:relative;z-index:1;}
+.trust-tag{display:flex;align-items:center;gap:10px;font-size:13.5px;color:var(--text-soft);}
+.trust-tag::before{content:'✓';font-size:12px;color:var(--gold);font-weight:700;}
+
+.contact-map{margin-top:3px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border2);background:var(--surface);box-shadow:0 30px 60px -30px rgba(0,0,0,0.5);}
+.contact-map-label{display:flex;align-items:center;gap:10px;padding:20px 26px;font-family:'Cairo',sans-serif;font-weight:700;font-size:14.5px;color:var(--gold-light);border-bottom:1px solid var(--border);}
+.contact-map-label i{color:var(--gold);}
+.contact-map-frame{width:100%;height:340px;}
+.contact-map-frame iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(0.15) contrast(1.05);}
+
+/* ============ PRODUCT MODAL ============ */
+.product-modal{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px;}
+.product-modal.open{display:flex;}
+.product-modal-backdrop{position:absolute;inset:0;background:rgba(6,4,2,0.82);backdrop-filter:blur(4px);}
+.product-modal-panel{
+  position:relative;z-index:1;width:100%;max-width:760px;max-height:88vh;overflow:auto;
+  background:linear-gradient(160deg, var(--onyx-2), var(--onyx));
+  border:1px solid var(--border2);border-radius:12px;
+  display:grid;grid-template-columns:1fr 1fr;
+  box-shadow:0 50px 100px -30px rgba(0,0,0,0.7);
+}
+.product-modal-close{
+  position:absolute;top:14px;left:14px;z-index:2;
+  width:38px;height:38px;border-radius:50%;background:rgba(6,4,2,0.6);
+  border:1px solid var(--border2);color:var(--gold-light);font-size:20px;line-height:1;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s,border-color .2s;
+}
+.product-modal-close:hover{background:rgba(6,4,2,0.9);border-color:var(--gold);}
+.product-modal-img{background:var(--onyx-3);min-height:260px;}
+.product-modal-img img{width:100%;height:100%;object-fit:cover;display:block;}
+.product-modal-body{padding:38px 34px;display:flex;flex-direction:column;}
+.product-modal-tag{font-size:11.5px;font-weight:700;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-family:'Cairo',sans-serif;}
+.product-modal-title{font-family:'Amiri',serif;font-size:27px;font-weight:700;color:var(--text);margin-bottom:18px;line-height:1.3;}
+.product-modal-specs{display:flex;flex-direction:column;gap:12px;margin-bottom:22px;}
+.spec-row{display:flex;justify-content:space-between;gap:14px;padding:12px 0;border-bottom:1px solid var(--border);font-size:14px;}
+.spec-row:last-child{border-bottom:none;}
+.spec-label{color:var(--text-soft);font-weight:500;}
+.spec-value{color:var(--text);font-weight:700;text-align:left;}
+.product-modal-note{font-size:13px;color:var(--text-soft);line-height:1.8;margin-bottom:24px;font-weight:400;}
+
+/* ============ FOOTER ============ */
+footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px;}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:60px;padding-bottom:48px;border-bottom:1px solid var(--border);}
+.footer-brand{display:flex;align-items:center;gap:14px;}
+.footer-brand img{width:46px;height:46px;object-fit:cover;border-radius:50%;border:1px solid var(--border2);}
+.footer-brand-name{font-family:'Cairo',sans-serif;font-size:28px;font-weight:800;color:var(--text);}
+.footer-brand-name em{color:var(--gold-light);font-style:normal;}
+.footer-brand-sub{font-size:13px;color:var(--text-soft);margin-top:6px;}
+.footer-cols{display:flex;gap:64px;}
+.footer-col h5{font-size:12.5px;font-weight:700;text-transform:uppercase;color:var(--gold-light);margin-bottom:12px;font-family:'Cairo',sans-serif;}
+.footer-col p{font-size:13.5px;color:var(--text-soft);line-height:1.85;max-width:220px;}
+.footer-social{display:flex;gap:10px;margin-top:14px;}
+.footer-social a{width:34px;height:34px;border-radius:50%;border:1px solid var(--border2);display:flex;align-items:center;justify-content:center;color:var(--text-soft);text-decoration:none;transition:all .25s;}
+.footer-social a:hover{color:var(--gold-light);border-color:var(--gold);}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;}
+.footer-copy{font-size:12.5px;color:var(--text-soft);}
+.footer-note{font-size:12.5px;color:var(--text-soft);}
+
+/* ============ FLOAT WA ============ */
+.float-wa{position:fixed;bottom:28px;left:28px;z-index:900;display:flex;align-items:center;direction:ltr;}
+.float-wa-label{background:var(--ivory);border:1px solid var(--border2);color:#1a1409;font-size:13px;font-weight:700;padding:8px 16px;margin-left:12px;border-radius:var(--radius);white-space:nowrap;opacity:0;transform:translateX(-8px);transition:opacity .3s,transform .3s;pointer-events:none;box-shadow:0 4px 12px rgba(0,0,0,0.25);font-family:'Cairo',sans-serif;}
+.float-wa:hover .float-wa-label{opacity:1;transform:translateX(0);}
+.float-wa-btn{width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none;box-shadow:0 6px 20px rgba(37,211,102,0.3);transition:transform .25s,box-shadow .25s;}
+.float-wa-btn:hover{transform:scale(1.08);box-shadow:0 10px 30px rgba(37,211,102,0.4);}
+.float-wa-btn i{color:#0e150f;font-size:24px;}
+
+/* ============ REVEAL ============ */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease;}
+.reveal.in{opacity:1;transform:none;}
+.d1{transition-delay:.08s;}
+.d2{transition-delay:.16s;}
+.d3{transition-delay:.24s;}
+
+/* ============ LOCATION LINK ============ */
+.location-link{color:var(--text);text-decoration:none;display:inline-flex;align-items:flex-start;gap:10px;transition:all .3s cubic-bezier(.4,0,.2,1);line-height:1.7;padding:8px 12px;border:1px solid var(--border);border-radius:8px;position:relative;background:var(--surface);}
+.location-link:hover{color:var(--gold-light);transform:translateY(-2px);background:var(--surface2);border-color:var(--border2);box-shadow:0 4px 12px rgba(201,162,39,0.08);}
+.location-link i{color:var(--gold-light);font-size:15px;margin-top:3px;flex-shrink:0;transition:transform .3s ease;}
+.location-link:hover i{transform:scale(1.15);}
+
+/* ============ UTILITIES ============ */
+.flex-between{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;}
+.text-right{text-align:right;}
+.max-w-320{max-width:320px;}
+.text-small{font-size:14px;}
+.opacity-60{opacity:0.6;}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1024px){
+  .container,.nav-inner{padding:0 32px;}
+  .hero-content{padding:140px 32px 80px;}
+  .nav-links{display:none;}
+  .nav-btn{display:none;}
+  .nav-burger{display:flex;}
+  .services-grid{grid-template-columns:1fr 1fr;}
+  .process-grid{grid-template-columns:1fr 1fr;}
+  .trust-grid{grid-template-columns:1fr 1fr;}
+  .about-grid{grid-template-columns:1fr;}
+  .about-visual{max-width:420px;}
+  .gallery-grid{grid-template-columns:repeat(3,1fr);}
+  .motion-grid{grid-template-columns:1fr 1fr;}
+  .testimonial-grid{grid-template-columns:1fr 1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-top{flex-direction:column;}
+  .services-intro{flex-direction:column;}
+  .hero-brand{font-size:clamp(90px,20vw,220px);}
+  .product-modal-panel{grid-template-columns:1fr;}
+  .product-modal-img{min-height:220px;}
+}
+@media (max-width:640px){
+  .section{padding:72px 0;}
+  .hero-metrics{flex-direction:column;gap:24px;}
+  .metric{border-left:none;margin-left:0;padding-left:0;border-bottom:1px solid var(--border);padding-bottom:24px;}
+  .metric:last-child{border-bottom:none;padding-bottom:0;}
+  .metric-val{font-size:32px;}
+  .services-grid,.process-grid,.trust-grid{grid-template-columns:1fr;}
+  .gallery-grid{grid-template-columns:1fr 1fr;}
+  .motion-grid{grid-template-columns:1fr;}
+  .testimonial-grid{grid-template-columns:1fr;}
+  .footer-cols{flex-direction:column;gap:28px;}
+  .contact-grid{border-radius:0;}
+  .contact-info,.contact-cta{padding:34px 22px;}
+  .hero-brand{font-size:clamp(70px,18vw,150px);}
+  .hero-content{padding:104px 22px 64px;}
+  .hero-h1{font-size:clamp(32px,9vw,44px);}
+  .hero-ctas{gap:12px;}
+  .btn-solid,.btn-ghost{flex:1 1 auto;justify-content:center;padding:15px 20px;font-size:14px;}
+  .hero-social{gap:8px;}
+  .social-chip{padding:8px 14px;font-size:12px;}
+
+  .nav-inner{padding:0 16px;height:64px;gap:10px;}
+  .nav-logo{gap:10px;}
+  .nav-logo img{width:42px;height:42px;}
+  .nav-logo span{font-size:15px;}
+  .nav-logo sup{display:block;font-size:8px;margin-right:0;}
+  .nav-burger{width:40px;height:40px;}
+
+  .container{padding:0 20px;}
+  .location-link{padding:12px 14px;margin:-12px -14px;border-radius:10px;gap:12px;border-width:1.5px;display:flex;align-items:center;line-height:1.5;}
+  .cinfo-row{padding:16px 0;gap:16px;}
+  .contact-cta h3{font-size:26px;}
+  .wa-btn{width:100%;justify-content:center;}
+  .float-wa{bottom:18px;left:18px;}
+  .float-wa-btn{width:50px;height:50px;}
+  .float-wa-label{display:none;}
+  .contact-map-frame{height:260px;}
+  .gallery-filters{gap:8px;}
+  .filter-btn{padding:8px 16px;font-size:12.5px;}
+  .gal-cap{padding:14px 12px 14px;}
+  .gal-ask-btn{padding:9px 14px;font-size:12px;width:100%;justify-content:center;}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <img src="./images/logo.jpg" alt="لوجو جولد هاوس">
+      <span>جولد هاوس<sup>دهب فاخر</sup></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">مين إحنا</a></li>
+      <li><a href="#collections">المجموعات</a></li>
+      <li><a href="#trust">ليه جولد هاوس</a></li>
+      <li><a href="#gallery">معرض الصور</a></li>
+      <li><a href="#motion">لقطات قريبة</a></li>
+      <li><a href="#testimonials">آراء العملاء</a></li>
+      <li><a href="#contact">تواصل معانا</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="https://wa.me/201285440450" class="nav-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i> كلمنا على واتساب
+      </a>
+      <button class="nav-burger" id="navBurger" aria-label="القائمة" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg">
+    <img src="./images/background.jpeg" alt="فاترينة جولد هاوس بالدهب" loading="eager">
+  </div>
+  <canvas id="gold-canvas"></canvas>
+  <div class="hero-vignette"></div>
+  <div class="hero-grad"></div>
+  <div class="hero-brand">جولد<br>هاوس</div>
+  <i class="fas fa-gem sparkle" style="top:22%;right:62%;font-size:14px;animation-delay:.3s;"></i>
+  <i class="fas fa-gem sparkle" style="top:68%;right:58%;font-size:10px;animation-delay:1.6s;"></i>
+  <i class="fas fa-gem sparkle" style="top:38%;right:88%;font-size:12px;animation-delay:2.8s;"></i>
+  <i class="fas fa-gem sparkle" style="top:80%;right:80%;font-size:9px;animation-delay:.9s;"></i>
+  <div class="hero-content">
+    <div class="hero-eyebrow">مجوهرات دهب فاخرة · الجيزة، مصر</div>
+    <h1 class="hero-h1">
+      مجوهرات دهب فاخرة،<br>
+      <span class="shimmer">فخامة في كل تفصيلة</span>
+    </h1>
+    <p class="hero-sub">
+      خواتم، حلقان، سلاسل وأساور بعيار 18K و21K و24K — بنختارهملك بعنينا وبنجهزها بحب، عشان تلبسها في يومك العادي، وكمان في اللحظات اللي بتستاهل حاجة تلمع أكتر.
+    </p>
+    <div class="hero-hallmarks">
+      <div class="hallmark-row">
+        <span class="hallmark">18K</span>
+        <span class="hallmark">21K</span>
+        <span class="hallmark">24K</span>
+      </div>
+    </div>
+    <div class="hero-ctas">
+      <a href="https://wa.me/201285440450" class="btn-solid" target="_blank">
+        <i class="fab fa-whatsapp"></i> اتسوق على واتساب
+      </a>
+      <a href="#collections" class="btn-ghost">شوف المجموعات</a>
+    </div>
+    <div class="hero-social">
+      <a href="https://wa.me/201285440450" target="_blank" class="social-chip wa"><i class="fab fa-whatsapp"></i> <span style="direction:ltr;display:inline-block;">+20 12 8544 0450</span></a>
+      <a href="https://chat.whatsapp.com/LHh0QUVHw5WAPJRMphs1Dc?s=qt&p=i&mlu=0&ilr=0" target="_blank" class="social-chip wa"><i class="fas fa-users"></i> جروب واتساب</a>
+      <a href="https://www.instagram.com/_goldhouse.jewelry?igsh=MWdsZml4c24wZmx3dA==&igsi=MWdsZml4c24wZmx3dA==" target="_blank" class="social-chip ig"><i class="fab fa-instagram"></i> إنستجرام</a>
+      <a href="https://www.tiktok.com/@_goldhouse.jewelry?_r=1&_t=ZS-98wZdRjO4Cg" target="_blank" class="social-chip tt"><i class="fab fa-tiktok"></i> تيك توك</a>
+    </div>
+    <div class="hero-metrics">
+      <div class="metric">
+        <div class="metric-val">18K<em>–24K</em></div>
+        <div class="metric-label">نقاء الدهب</div>
+      </div>
+      <div class="metric">
+        <div class="metric-val">+<span class="counter" data-target="4">0</span></div>
+        <div class="metric-label">مجموعات</div>
+      </div>
+      <div class="metric">
+        <div class="metric-val"><span class="counter" data-target="100">100</span><em>%</em></div>
+        <div class="metric-label">دهب أصلي</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>فخامة في كل تفصيلة</span><span class="sep">◆</span>
+    <span>مجوهرات دهب فاخرة</span><span class="sep">◆</span>
+    <span>18K · 21K · 24K</span><span class="sep">◆</span>
+    <span>خواتم وحلقان</span><span class="sep">◆</span>
+    <span>سلاسل وأساور</span><span class="sep">◆</span>
+    <span>فخامة في كل تفصيلة</span><span class="sep">◆</span>
+    <span>مجوهرات دهب فاخرة</span><span class="sep">◆</span>
+    <span>18K · 21K · 24K</span><span class="sep">◆</span>
+    <span>خواتم وحلقان</span><span class="sep">◆</span>
+    <span>سلاسل وأساور</span><span class="sep">◆</span>
+  </div>
+</div>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="eyebrow">عن جولد هاوس</div>
+        <h2 class="section-h2">هنا الدهب<br>بيبقى <em>فن</em>.</h2>
+        <div class="about-body" style="margin-top:32px;">
+          <p>جولد هاوس محل دهب في الجيزة، بيقدملك قطع فاخرة ومختارة بعناية بعيار 18K و21K و24K — من الخواتم والحلقان لحد السلاسل والأساور.</p>
+          <p>كل قطعة عندنا بنختارها بعنينا ونجهزها بكل اهتمام بالتفاصيل، سواء تصميم كلاسيك أو خاتم بالخط العربي بنصممهولك خصيصي يحكي حكايتك.</p>
+          <p>وعدنا بسيط: دهب أصلي، سعر واضح، وتجربة سهلة — من أول رسالة لحد ما تستلم قطعتك.</p>
+        </div>
+      </div>
+      <div class="reveal d2">
+        <div class="about-visual">
+          <div class="about-frame">
+            <img src="./images/gold-1.jpeg" alt="تفصيلة خاتم من جولد هاوس">
+            <div class="about-frame-tag">قطع مختارة بعناية</div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-cell">
+              <div class="stat-n">18K<em>–24K</em></div>
+              <div class="stat-l">عيارات الدهب</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-n"><span class="counter" data-target="4">0</span></div>
+              <div class="stat-l">أقسام مجوهرات</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-n"><span class="counter" data-target="100">0</span><em>%</em></div>
+              <div class="stat-l">دهب أصلي</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-n">تصميم خاص</div>
+              <div class="stat-l">قطع بالطلب</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="collections" class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="services-intro">
+      <div class="reveal">
+        <div class="eyebrow">مجموعاتنا</div>
+        <h2 class="section-h2">اتسوق حسب النوع</h2>
+      </div>
+    </div>
+    <div class="services-grid">
+      <div class="svc reveal">
+        <div class="svc-num">01 — مجموعة</div>
+        <div class="svc-icon"><i class="fas fa-ring"></i></div>
+        <div class="svc-name">خواتم</div>
+        <div class="svc-desc">من خواتم الخط العربي اللي بنصممهالك خصيصي، لحد الأباند والخواتم اللي بتلفت الأنظار — كلها مجهزة بدقة بعيار 18K و21K و24K.</div>
+      </div>
+      <div class="svc reveal d1">
+        <div class="svc-num">02 — مجموعة</div>
+        <div class="svc-icon"><i class="fas fa-gem"></i></div>
+        <div class="svc-name">حلقان</div>
+        <div class="svc-desc">هوبس، دروب واستادز مجهزين بتفصيل دقيق — قطع تناسب لبسك اليومي وكمان المناسبات.</div>
+      </div>
+      <div class="svc reveal d2">
+        <div class="svc-num">03 — مجموعة</div>
+        <div class="svc-icon"><i class="fas fa-link"></i></div>
+        <div class="svc-name">سلاسل</div>
+        <div class="svc-desc">سلاسل بميداليات وسلاسل بطبقات مصممة لإطلالة شيك ومرنة — من القطع الرقيقة البسيطة لحد القطع اللي بتلفت النظر.</div>
+      </div>
+      <div class="svc reveal d3">
+        <div class="svc-num">04 — مجموعة</div>
+        <div class="svc-icon"><i class="fas fa-circle-notch"></i></div>
+        <div class="svc-name">أساور وبنجل</div>
+        <div class="svc-desc">بنجل ملتوي، أساور سلاسل وكفّات — مريحة، متينة، ومجهزة تلمع زي المرايا.</div>
+      </div>
+    </div>
+
+    <hr class="rule">
+
+    <div class="reveal">
+      <div class="eyebrow">إزاي بنشتغل</div>
+      <h2 class="section-h2">رحلتك معانا</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="process-step-num">01</div>
+        <div class="process-step-title">تصفح المجموعة</div>
+        <div class="process-step-desc">شوف خواتمنا وحلقاننا وسلاسلنا وأساورنا على إنستجرام أو هنا في الموقع.</div>
+      </div>
+      <div class="process-step reveal d1">
+        <div class="process-step-num">02</div>
+        <div class="process-step-title">كلمنا</div>
+        <div class="process-step-desc">راسلنا على واتساب أو إنستجرام عشان تتأكد من التوفر والسعر والمقاس لأي قطعة عاجباك.</div>
+      </div>
+      <div class="process-step reveal d2">
+        <div class="process-step-num">03</div>
+        <div class="process-step-title">خصّص القطعة</div>
+        <div class="process-step-desc">لو عايز لمسة خاصة، زي قطع الخط العربي، النقش، أو تعديل المقاس — قولنا وهنظبطهالك.</div>
+      </div>
+      <div class="process-step reveal d3">
+        <div class="process-step-num">04</div>
+        <div class="process-step-title">استلم قطعتك</div>
+        <div class="process-step-desc">تستلم من حدائق الأهرام، أو نتفق على تسليم يناسبك، وإحنا بنراعي كل التفاصيل.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="trust" class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">ثقتك أهم حاجة عندنا</div>
+      <h2 class="section-h2">ليه تختار <em>جولد هاوس</em>؟</h2>
+      <p class="section-lead">مش بس شكل شيك — إحنا شغالين على أساس الصراحة والوضوح في كل حاجة.</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card reveal">
+        <div class="trust-card-icon"><i class="fas fa-shield-halved"></i></div>
+        <div class="trust-card-title">دهب أصلي 100%</div>
+        <div class="trust-card-desc">كل قطعة عندنا دهب حقيقي، مفيش خلطات ولا طلاء بيخبي الحقيقة.</div>
+      </div>
+      <div class="trust-card reveal d1">
+        <div class="trust-card-icon"><i class="fas fa-award"></i></div>
+        <div class="trust-card-title">عيارات 18K · 21K · 24K</div>
+        <div class="trust-card-desc">اختار العيار اللي يناسبك وميزانيتك، وكل حاجة واضحة قدامك من الأول.</div>
+      </div>
+      <div class="trust-card reveal d2">
+        <div class="trust-card-icon"><i class="fas fa-pen-nib"></i></div>
+        <div class="trust-card-title">تصاميم مخصصة</div>
+        <div class="trust-card-desc">من خواتم الخط العربي لحد القطع المظبوطة على مقاسك — بنسمعك ونصمملك.</div>
+      </div>
+      <div class="trust-card reveal">
+        <div class="trust-card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        <div class="trust-card-title">تسليم آمن ومريح</div>
+        <div class="trust-card-desc">تستلم من حدائق الأهرام أو نتفق على تسليم يناسبك، وإحنا بنراعي كل خطوة.</div>
+      </div>
+      <div class="trust-card reveal d1">
+        <div class="trust-card-icon"><i class="fas fa-magnifying-glass"></i></div>
+        <div class="trust-card-title">فحص جودة قبل التسليم</div>
+        <div class="trust-card-desc">بنراجع كل قطعة قبل ما توصلك عشان تكون مطمّن للتفاصيل والتشطيب.</div>
+      </div>
+      <div class="trust-card reveal d2">
+        <div class="trust-card-icon"><i class="fas fa-tags"></i></div>
+        <div class="trust-card-title">تسعير واضح</div>
+        <div class="trust-card-desc">بنقولك السعر من غير لف ولا دوران، وبنرد بسرعة على أي سؤال.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="flex-between">
+      <div class="reveal">
+        <div class="eyebrow">قطعنا</div>
+        <h2 class="section-h2">مجوهرات مختارة</h2>
+      </div>
+      <p class="reveal d1 text-small text-right max-w-320 opacity-60">
+        من القطع البسيطة اللي هتلبسها كل يوم، لحد القطع اللي هتلفت الأنظار في المناسبات. دوس على أي قطعة تشوف تفاصيلها.
+      </p>
+    </div>
+
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="rings">خواتم</button>
+      <button class="filter-btn" data-filter="earrings">حلقان</button>
+      <button class="filter-btn" data-filter="necklaces">سلاسل</button>
+      <button class="filter-btn" data-filter="bracelets">أساور</button>
+    </div>
+
+    <div class="gallery-grid reveal d1" id="galleryGrid">
+      <div class="gal" data-category="necklaces" data-name="سلسلة دهب متعددة الطبقات" data-tag="دهب فاخر" data-img="./images/gold-4.jpeg">
+        <img src="./images/gold-4.jpeg" alt="سلسلة دهب">
+        <span class="gal-badge">سلاسل</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">دهب فاخر</div>
+          <div class="gal-cap-title">سلاسل متعددة الطبقات</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة دهب متعددة الطبقات"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="rings" data-name="خاتم خط عربي مخصص" data-tag="بالطلب" data-img="./images/gold-3.jpeg">
+        <img src="./images/gold-3.jpeg" alt="خاتم خط عربي مخصص">
+        <span class="gal-badge">خواتم</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">بالطلب</div>
+          <div class="gal-cap-title">خواتم مخصصة</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم خط عربي مخصص"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="earrings" data-name="حلق دروب دهب" data-tag="الإطلالة اليومية" data-img="./images/gold-2.jpeg">
+        <img src="./images/gold-2.jpeg" alt="حلق دروب دهب">
+        <span class="gal-badge">حلقان</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">الإطلالة اليومية</div>
+          <div class="gal-cap-title">حلق دروب</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق دروب دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="bracelets" data-name="بنجل دهب" data-tag="قطعة مميزة" data-img="./images/gold-5.jpeg">
+        <img src="./images/gold-5.jpeg" alt="بنجل دهب">
+        <span class="gal-badge">أساور</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">قطعة مميزة</div>
+          <div class="gal-cap-title">بنجل</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن بنجل دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="earrings" data-name="حلق سلسلة دهب" data-tag="توقيعنا المميز" data-img="./images/gold-6.jpeg">
+        <img src="./images/gold-6.jpeg" alt="حلق سلسلة دهب">
+        <span class="gal-badge">حلقان</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">توقيعنا المميز</div>
+          <div class="gal-cap-title">حلق سلسلة</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق سلسلة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="bracelets" data-name="سوار سلسلة دهب" data-tag="الإطلالة اليومية" data-img="./images/gold-7.jpeg">
+        <img src="./images/gold-7.jpeg" alt="سوار سلسلة دهب">
+        <span class="gal-badge">أساور</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">الإطلالة اليومية</div>
+          <div class="gal-cap-title">سوار سلسلة</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن سوار سلسلة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="necklaces" data-name="قلادة دهب" data-tag="دهب فاخر" data-img="./images/gold-9.jpeg">
+        <img src="./images/gold-9.jpeg" alt="قلادة دهب">
+        <span class="gal-badge">سلاسل</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">دهب فاخر</div>
+          <div class="gal-cap-title">قلادة دهب</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن قلادة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="rings" data-name="خاتم دهب كلاسيك" data-tag="الإطلالة اليومية" data-img="./images/gold-10.jpeg">
+        <img src="./images/gold-10.jpeg" alt="خاتم دهب كلاسيك">
+        <span class="gal-badge">خواتم</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">الإطلالة اليومية</div>
+          <div class="gal-cap-title">خاتم كلاسيك</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم دهب كلاسيك"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="earrings" data-name="حلق استادز دهب" data-tag="الإطلالة اليومية" data-img="./images/gold-11.jpeg">
+        <img src="./images/gold-11.jpeg" alt="حلق استادز دهب">
+        <span class="gal-badge">حلقان</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">الإطلالة اليومية</div>
+          <div class="gal-cap-title">حلق استادز</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق استادز دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="bracelets" data-name="كف دهب" data-tag="قطعة مميزة" data-img="./images/gold-12.jpeg">
+        <img src="./images/gold-12.jpeg" alt="كف دهب">
+        <span class="gal-badge">أساور</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">قطعة مميزة</div>
+          <div class="gal-cap-title">كف دهب</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن كف دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="necklaces" data-name="سلسلة دهب رقيقة" data-tag="الإطلالة اليومية" data-img="./images/gold-13.jpeg">
+        <img src="./images/gold-13.jpeg" alt="سلسلة دهب رقيقة">
+        <span class="gal-badge">سلاسل</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">الإطلالة اليومية</div>
+          <div class="gal-cap-title">سلسلة رقيقة</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة دهب رقيقة"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="rings" data-name="خاتم إيترنيتي" data-tag="دهب فاخر" data-img="./images/gold-14.jpeg">
+        <img src="./images/gold-14.jpeg" alt="خاتم إيترنيتي">
+        <span class="gal-badge">خواتم</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">دهب فاخر</div>
+          <div class="gal-cap-title">خاتم إيترنيتي</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم إيترنيتي"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="earrings" data-name="حلق هوبس دهب" data-tag="توقيعنا المميز" data-img="./images/gold-15.jpeg">
+        <img src="./images/gold-15.jpeg" alt="حلق هوبس دهب">
+        <span class="gal-badge">حلقان</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">توقيعنا المميز</div>
+          <div class="gal-cap-title">حلق هوبس</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق هوبس دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="bracelets" data-name="سوار دهب مجدول" data-tag="قطعة مميزة" data-img="./images/gold-16.jpeg">
+        <img src="./images/gold-16.jpeg" alt="سوار دهب مجدول">
+        <span class="gal-badge">أساور</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">قطعة مميزة</div>
+          <div class="gal-cap-title">سوار مجدول</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن سوار دهب مجدول"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="necklaces" data-name="سلسلة ميدالية دهب" data-tag="بالطلب" data-img="./images/gold-17.jpeg">
+        <img src="./images/gold-17.jpeg" alt="سلسلة ميدالية دهب">
+        <span class="gal-badge">سلاسل</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">بالطلب</div>
+          <div class="gal-cap-title">سلسلة ميدالية</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة ميدالية دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="rings" data-name="خاتم دهب مرصع" data-tag="قطعة مميزة" data-img="./images/gold-18.jpeg">
+        <img src="./images/gold-18.jpeg" alt="خاتم دهب مرصع">
+        <span class="gal-badge">خواتم</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">قطعة مميزة</div>
+          <div class="gal-cap-title">خاتم مرصع</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم دهب مرصع"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="earrings" data-name="حلق تعليقة دهب" data-tag="توقيعنا المميز" data-img="./images/gold-19.jpeg">
+        <img src="./images/gold-19.jpeg" alt="حلق تعليقة دهب">
+        <span class="gal-badge">حلقان</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">توقيعنا المميز</div>
+          <div class="gal-cap-title">حلق تعليقة</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق تعليقة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="necklaces" data-name="سلسلة دهب بحرف" data-tag="بالطلب" data-img="./images/gold-20.jpeg">
+        <img src="./images/gold-20.jpeg" alt="سلسلة دهب بحرف">
+        <span class="gal-badge">سلاسل</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">بالطلب</div>
+          <div class="gal-cap-title">سلسلة بحرف</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة دهب بحرف"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="bracelets" data-name="أسورة دهب ناعمة" data-tag="الإطلالة اليومية" data-img="./images/gold-21.jpeg">
+        <img src="./images/gold-21.jpeg" alt="أسورة دهب ناعمة">
+        <span class="gal-badge">أساور</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">الإطلالة اليومية</div>
+          <div class="gal-cap-title">أسورة ناعمة</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن أسورة دهب ناعمة"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="rings" data-name="خاتم فرح دهب" data-tag="دهب فاخر" data-img="./images/gold-22.jpeg">
+        <img src="./images/gold-22.jpeg" alt="خاتم فرح دهب">
+        <span class="gal-badge">خواتم</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">دهب فاخر</div>
+          <div class="gal-cap-title">خاتم فرح</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم فرح دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="earrings" data-name="حلق دهب بسيط" data-tag="الإطلالة اليومية" data-img="./images/gold-23.jpeg">
+        <img src="./images/gold-23.jpeg" alt="حلق دهب بسيط">
+        <span class="gal-badge">حلقان</span>
+        <div class="gal-cap">
+          <div class="gal-cap-tag">الإطلالة اليومية</div>
+          <div class="gal-cap-title">حلق بسيط</div>
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق دهب بسيط"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="motion" class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="flex-between">
+      <div class="reveal">
+        <div class="eyebrow">لقطات قريبة</div>
+        <h2 class="section-h2">شوفها <em>بتعكس الضوء</em></h2>
+      </div>
+      <p class="reveal d1 text-small text-right max-w-320 opacity-60">
+        فيديوهات قصيرة مقرّبة لقطع من المجموعة — كل زاوية، كل بريق.
+      </p>
+    </div>
+    <div class="motion-grid reveal d1">
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-1.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">خواتم</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">بالطلب</div>
+          <div class="motion-cap-title">خاتم خط عربي، ٣٦٠°</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-2.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">سلاسل</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">دهب فاخر</div>
+          <div class="motion-cap-title">سلسلة طبقات، لقطة مقرّبة</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-3.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">أساور</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">قطعة مميزة</div>
+          <div class="motion-cap-title">بنجل، دوران بطيء</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-4.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">أساور</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">قطعة مميزة</div>
+          <div class="motion-cap-title">بنجل، دوران بطيء</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-6.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">أساور</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">قطعة مميزة</div>
+          <div class="motion-cap-title">بنجل، دوران بطيء</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-5.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">أساور</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">قطعة مميزة</div>
+          <div class="motion-cap-title">بنجل، دوران بطيء</div>
+        </div>
+      </div>
+    </div>
+    <p class="motion-note">دوس على أيقونة السماعة عشان تشغّل الصوت. غيّر روابط الفيديوهات بفيديوهات منتجاتك الحقيقية عشان القسم ده يشتغل.</p>
+  </div>
+</section>
+
+<section id="testimonials" class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="flex-between">
+      <div class="reveal">
+        <div class="eyebrow">كلام من ناسنا</div>
+        <h2 class="section-h2">عملاؤنا بيقولوا <em>إيه</em>؟</h2>
+      </div>
+      <p class="reveal d1 text-small text-right max-w-320 opacity-60">
+        مش إحنا اللي هنقولك — دي رسايل حقيقية وصلتنا من عملاء كلمونا على واتساب بعد ما اشتروا واستلموا.
+      </p>
+    </div>
+
+    <div class="testimonial-grid reveal d1">
+      <figure class="testi-card">
+        <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+        <div class="testi-shot"><img src="./images/feedback-1.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <figcaption class="testi-cap">
+          <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+          <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
+        </figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+        <div class="testi-shot"><img src="./images/feedback-2.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <figcaption class="testi-cap">
+          <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+          <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
+        </figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+        <div class="testi-shot"><img src="./images/feedback-3.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <figcaption class="testi-cap">
+          <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+          <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
+        </figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+        <div class="testi-shot"><img src="./images/feedback-4.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <figcaption class="testi-cap">
+          <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+          <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
+        </figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+        <div class="testi-shot"><img src="./images/feedback-5.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <figcaption class="testi-cap">
+          <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+          <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
+        </figcaption>
+      </figure>
+      <figure class="testi-card">
+        <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
+        <div class="testi-shot"><img src="./images/feedback-6.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <figcaption class="testi-cap">
+          <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+          <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
+        </figcaption>
+      </figure>
+    </div>
+    <p class="testi-note">دي عينة بسيطة من رسايل عملائنا الحقيقية على واتساب — وفي كتير غيرها.</p>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">تواصل معانا</div>
+      <h2 class="section-h2">يلا نلاقيلك القطعة اللي تعجبك</h2>
+      <p class="section-lead">عندك تصميم في بالك، أو عايز تتأكد من التوفر والسعر؟ كلمنا على واتساب، إنستجرام أو تيك توك — هنكون سعداء نساعدك.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>بيانات التواصل</h3>
+        <div class="contact-info-sub">بنرد عليك عادةً خلال شوية ساعات.</div>
+        <div>
+          <div class="cinfo-row">
+            <div class="cinfo-ico wa"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="cinfo-label">واتساب</div>
+              <div class="cinfo-multi">
+                <a href="https://wa.me/201285440450" target="_blank" class="cinfo-link"><i class="fab fa-whatsapp"></i> <span style="direction:ltr;display:inline-block;">+20 12 8544 0450</span> <i class="fas fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-ico wa"><i class="fas fa-users"></i></div>
+            <div>
+              <div class="cinfo-label">جروب واتساب</div>
+              <div class="cinfo-val">
+                <a href="https://chat.whatsapp.com/LHh0QUVHw5WAPJRMphs1Dc?s=qt&p=i&mlu=0&ilr=0" target="_blank" class="cinfo-link"><i class="fas fa-users"></i> انضم لجروب الواتساب <i class="fas fa-arrow-left"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-ico"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="cinfo-label">الموقع</div>
+              <div class="cinfo-val">
+                <a href="https://www.google.com/maps?q=29.96368408203125,31.104936599731445&z=17&hl=ar" target="_blank" class="location-link">
+                  <i class="fas fa-map-pin"></i>
+                  حدائق الأهرام، البوابة الثانية، 185 ح<br>
+                  <span class="text-small opacity-60">الجيزة، مصر</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-ico ig"><i class="fab fa-instagram"></i></div>
+            <div>
+              <div class="cinfo-label">إنستجرام</div>
+              <div class="cinfo-val">
+                <a href="https://www.instagram.com/_goldhouse.jewelry?igsh=MWdsZml4c24wZmx3dA==&igsi=MWdsZml4c24wZmx3dA==" target="_blank" class="cinfo-link">
+                  <i class="fab fa-instagram"></i> <span style="direction:ltr;display:inline-block;">@_goldhouse.jewelry</span> <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="cinfo-row">
+            <div class="cinfo-ico"><i class="fab fa-tiktok"></i></div>
+            <div>
+              <div class="cinfo-label">تيك توك</div>
+              <div class="cinfo-val">
+                <a href="https://www.tiktok.com/@_goldhouse.jewelry?_r=1&_t=ZS-98wZdRjO4Cg" target="_blank" class="cinfo-link">
+                  <i class="fab fa-tiktok"></i> <span style="direction:ltr;display:inline-block;">@_goldhouse.jewelry</span> <i class="fas fa-arrow-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-cta reveal d2">
+        <h3>اتسوق مع <em>جولد هاوس</em></h3>
+        <p>سواء عايز قطعة بسيطة تلبسها كل يوم، أو تصميم خاص بالخط العربي — كلمنا وهنساعدك تلاقي (أو نصمملك) القطعة المناسبة.</p>
+        <a href="https://wa.me/201285440450" class="wa-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i> كلمنا على واتساب
+        </a>
+        <div class="cta-social-row">
+          <a href="https://wa.me/201285440450" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://chat.whatsapp.com/LHh0QUVHw5WAPJRMphs1Dc?s=qt&p=i&mlu=0&ilr=0" target="_blank" aria-label="WhatsApp Group"><i class="fas fa-users"></i></a>
+          <a href="https://www.instagram.com/_goldhouse.jewelry?igsh=MWdsZml4c24wZmx3dA==&igsi=MWdsZml4c24wZmx3dA==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@_goldhouse.jewelry?_r=1&_t=ZS-98wZdRjO4Cg" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="trust-tags">
+          <div class="trust-tag">دهب أصلي على طول</div>
+          <div class="trust-tag">سعر واضح ومفيش لف ودوران</div>
+          <div class="trust-tag">خدمة مخصصة ليك</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-map reveal">
+      <div class="contact-map-label"><i class="fas fa-map-marker-alt"></i> مكانا على الخريطة</div>
+      <div class="contact-map-frame">
+        <iframe src="https://www.google.com/maps?q=29.96368408203125,31.104936599731445&z=17&hl=ar&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="موقع جولد هاوس على الخريطة"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="./images/logo.jpg" alt="جولد هاوس">
+          <div>
+            <div class="footer-brand-name">GOLD <em>HOUSE</em></div>
+            <div class="footer-brand-sub">مجوهرات دهب فاخرة — 18K · 21K · 24K</div>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/201285440450" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://chat.whatsapp.com/LHh0QUVHw5WAPJRMphs1Dc?s=qt&p=i&mlu=0&ilr=0" target="_blank" aria-label="WhatsApp Group"><i class="fas fa-users"></i></a>
+          <a href="https://www.instagram.com/_goldhouse.jewelry?igsh=MWdsZml4c24wZmx3dA==&igsi=MWdsZml4c24wZmx3dA==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@_goldhouse.jewelry?_r=1&_t=ZS-98wZdRjO4Cg" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>الأصالة</h5>
+          <p>كل قطعة عندنا دهب أصلي، متوفرة بعيار 18K و21K و24K.</p>
+        </div>
+        <div class="footer-col">
+          <h5>الحرفية</h5>
+          <p>مُجهزة بعناية فائقة، من التصاميم الكلاسيكية لغاية قطع الخط العربي المخصصة.</p>
+        </div>
+        <div class="footer-col">
+          <h5>الثقة</h5>
+          <p>تسعير واضح وخدمة صادقة، من أول رسالة لغاية التسليم.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 جولد هاوس. جميع الحقوق محفوظة.</div>
+      <div class="footer-note">الجيزة، مصر</div>
+    </div>
+  </div>
+</footer>
+
+<div class="float-wa">
+  <div class="float-wa-label">راسلنا</div>
+  <a href="https://wa.me/201285440450" class="float-wa-btn" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- Product Details Modal -->
+<div class="product-modal" id="productModal" aria-hidden="true">
+  <div class="product-modal-backdrop" data-close></div>
+  <div class="product-modal-panel">
+    <button class="product-modal-close" data-close aria-label="إغلاق">&times;</button>
+    <div class="product-modal-img"><img id="pmImg" src="" alt=""></div>
+    <div class="product-modal-body">
+      <div class="product-modal-tag" id="pmTag"></div>
+      <h3 class="product-modal-title" id="pmTitle"></h3>
+      <div class="product-modal-specs" id="pmSpecs"></div>
+      <p class="product-modal-note">الأسعار والمقاسات النهائية بتتأكد معانا مباشرة عشان تختلف حسب التصميم والوزن.</p>
+      <a href="#" id="pmWa" class="wa-btn" target="_blank"><i class="fab fa-whatsapp"></i> اسأل عن هذه القطعة</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('stuck', window.scrollY > 50);
+  }, { passive: true });
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+
+  function animateCounter(el) {
+    const target = parseFloat(el.dataset.target);
+    const duration = 900;
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased);
+      if (p < 1) requestAnimationFrame(tick);
+      else el.textContent = target;
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        e.target.querySelectorAll('.counter').forEach(animateCounter);
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+  /* ============ MOLTEN GOLD HERO ANIMATION ============ */
+  (function(){
+    const canvas = document.getElementById('gold-canvas');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const hero = document.getElementById('hero');
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let W, H, dpr;
+
+    function resize(){
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      W = hero.offsetWidth; H = hero.offsetHeight;
+      canvas.width = W * dpr; canvas.height = H * dpr;
+      canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    const ribbonCount = 5;
+    const ribbons = Array.from({length: ribbonCount}, (_, i) => ({
+      baseY: 0.18 + i * 0.16 + Math.random()*0.05,
+      amp: 40 + Math.random()*50,
+      freq: 0.6 + Math.random()*0.5,
+      speed: 0.09 + Math.random()*0.06,
+      phase: Math.random()*Math.PI*2,
+      width: 60 + Math.random()*70,
+      hueShift: Math.random()*20,
+    }));
+
+    const particleCount = reduceMotion ? 0 : 46;
+    const particles = Array.from({length: particleCount}, () => ({
+      x: Math.random(),
+      y: Math.random(),
+      r: 0.6 + Math.random()*1.8,
+      speed: 0.04 + Math.random()*0.09,
+      drift: (Math.random()-0.5)*0.15,
+      twinkle: Math.random()*Math.PI*2,
+      twinkleSpeed: 0.6 + Math.random()*1.2,
+    }));
+
+    let t = 0;
+    function draw(){
+      t += reduceMotion ? 0.002 : 0.006;
+      ctx.clearRect(0,0,W,H);
+
+      ribbons.forEach((r) => {
+        const grad = ctx.createLinearGradient(0,0,W,0);
+        grad.addColorStop(0.00,'rgba(122,93,22,0)');
+        grad.addColorStop(0.22,'rgba(201,162,39,0.16)');
+        grad.addColorStop(0.5,'rgba(255,235,174,0.30)');
+        grad.addColorStop(0.78,'rgba(201,162,39,0.16)');
+        grad.addColorStop(1.00,'rgba(122,93,22,0)');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = r.width;
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        const steps = 24;
+        for(let s=0; s<=steps; s++){
+          const nx = (s/steps) * W;
+          const px = s/steps;
+          const ny = H * r.baseY + Math.sin(px*Math.PI*r.freq + t*r.speed*10 + r.phase) * r.amp
+                     + Math.sin(px*Math.PI*r.freq*2.3 + t*r.speed*14) * (r.amp*0.28);
+          if(s===0) ctx.moveTo(nx,ny); else ctx.lineTo(nx,ny);
+        }
+        ctx.filter = 'blur(18px)';
+        ctx.stroke();
+        ctx.filter = 'none';
+      });
+
+      particles.forEach(p => {
+        p.y -= p.speed * 0.0016;
+        p.x += Math.sin(t*2 + p.drift*10) * 0.00025;
+        if(p.y < -0.02){ p.y = 1.02; p.x = Math.random(); }
+        p.twinkle += 0.02 * p.twinkleSpeed;
+        const alpha = 0.25 + Math.sin(p.twinkle)*0.25 + 0.2;
+        ctx.beginPath();
+        ctx.fillStyle = `rgba(255,235,174,${Math.max(0,alpha)})`;
+        ctx.arc(p.x*W, p.y*H, p.r, 0, Math.PI*2);
+        ctx.fill();
+      });
+
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+
+  /* ============ PRODUCT VIDEO SOUND TOGGLE ============ */
+  document.querySelectorAll('.motion-card').forEach(card => {
+    const video = card.querySelector('video');
+    const btn = card.querySelector('.motion-toggle');
+    const icon = btn ? btn.querySelector('i') : null;
+    if(!video || !btn) return;
+    video.muted = true;
+    video.play().catch(()=>{});
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      video.muted = !video.muted;
+      if(icon){
+        icon.classList.toggle('fa-volume-mute', video.muted);
+        icon.classList.toggle('fa-volume-up', !video.muted);
+      }
+    });
+  });
+
+  /* ============ GALLERY FILTERING ============ */
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const galItems = document.querySelectorAll('.gal');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      galItems.forEach(g => {
+        const show = f === 'all' || g.dataset.category === f;
+        g.style.display = show ? '' : 'none';
+      });
+    });
+  });
+
+  /* ============ PRODUCT MODAL ============ */
+  const categoryLabels = { rings: 'خواتم', earrings: 'حلقان', necklaces: 'سلاسل', bracelets: 'أساور وبنجل' };
+  const specsByCategory = {
+    rings: [
+      ['المقاسات المتاحة', 'حسب الطلب'],
+      ['الوزن التقريبي', 'يُحدَّد حسب التصميم']
+    ],
+    earrings: [
+      ['الوزن التقريبي', 'يُحدَّد حسب التصميم']
+    ],
+    necklaces: [
+      ['الطول', 'عدة أطوال متاحة'],
+      ['الوزن التقريبي', 'يُحدَّد حسب التصميم']
+    ],
+    bracelets: [
+      ['المقاس', 'قابل للتعديل'],
+      ['الوزن التقريبي', 'يُحدَّد حسب التصميم']
+    ]
+  };
+
+  const modal = document.getElementById('productModal');
+  const pmImg = document.getElementById('pmImg');
+  const pmTag = document.getElementById('pmTag');
+  const pmTitle = document.getElementById('pmTitle');
+  const pmSpecs = document.getElementById('pmSpecs');
+  const pmWa = document.getElementById('pmWa');
+
+  function openModal(gal){
+    const name = gal.dataset.name;
+    const category = gal.dataset.category;
+    const tag = gal.dataset.tag;
+    const img = gal.dataset.img;
+
+    pmImg.src = img;
+    pmImg.alt = name;
+    pmTag.textContent = tag;
+    pmTitle.textContent = name;
+
+    const rows = [
+      ['العيار', '18K / 21K / 24K'],
+      ['الفئة', categoryLabels[category] || ''],
+      ...(specsByCategory[category] || []),
+      ['السعر', 'تواصل معنا للسعر'],
+      ['التخصيص', 'متاح عند الطلب']
+    ];
+    pmSpecs.innerHTML = rows.map(([label, value]) =>
+      `<div class="spec-row"><span class="spec-label">${label}</span><span class="spec-value">${value}</span></div>`
+    ).join('');
+
+    const waText = encodeURIComponent(`أهلاً، حابب أسأل عن: ${name}`);
+    pmWa.href = `https://wa.me/201285440450?text=${waText}`;
+
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('menu-open');
+  }
+
+  function closeModal(){
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('menu-open');
+  }
+
+  document.querySelectorAll('.gal-ask-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const card = btn.closest('.gal');
+      if (card) openModal(card);
+    });
+  });
+  modal.querySelectorAll('[data-close]').forEach(el => el.addEventListener('click', closeModal));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>جولد هاوس — مجوهرات دهب فاخرة، الجيزة</title>
-<meta name="description" content="جولد هاوس — مجوهرات دهب فاخرة بعيار 18K و21K و24K. خواتم، حلقان، سلاسل وأساور، في الجيزة، مصر. فخامة في كل تفصيلة.">
+<title>إم جولد — مجوهرات دهب فاخرة، الجيزة</title>
+<meta name="description" content="إم جولد — مجوهرات دهب فاخرة بعيار 18K و21K و24K. خواتم، حلقان، سلاسل وأساور، في الجيزة، مصر. فخامة في كل تفصيلة.">
 <link rel="icon" href="./images/logo.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -268,7 +268,8 @@ hr.rule{border:none;border-top:1px solid var(--border);margin:80px 0;}
 .filter-btn:hover{color:var(--gold-light);border-color:var(--gold);}
 .filter-btn.active{background:var(--gold);color:#17110a;border-color:var(--gold);font-weight:700;}
 .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;margin-top:32px;}
-.gal{overflow:hidden;position:relative;background:var(--surface2);aspect-ratio:3/4;border:0;padding:0;display:block;width:100%;text-align:right;font-family:inherit;}
+.gal{overflow:hidden;position:relative;background:var(--surface2);aspect-ratio:3/4;border:0;padding:0;display:block;width:100%;text-align:right;font-family:inherit;transition:opacity .3s ease, transform .3s ease;}
+.gal.gal-hide{display:none;}
 .gal img{width:100%;height:100%;object-fit:cover;display:block;transition:filter .5s ease,transform .5s ease;}
 .gal:hover img{transform:scale(1.045);}
 .gal-cap{position:absolute;bottom:0;left:0;right:0;padding:16px 16px 16px;background:linear-gradient(transparent,rgba(15,11,7,0.94) 55%);}
@@ -500,13 +501,13 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
 <nav id="nav">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">
-      <img src="./images/logo.jpg" alt="لوجو جولد هاوس">
-      <span>جولد هاوس<sup>دهب فاخر</sup></span>
+      <img src="./images/logo-2.png" alt="لوجو إم جولد">
+      <span>إم جولد<sup>دهب فاخر</sup></span>
     </a>
     <ul class="nav-links">
       <li><a href="#about">مين إحنا</a></li>
       <li><a href="#collections">المجموعات</a></li>
-      <li><a href="#trust">ليه جولد هاوس</a></li>
+      <li><a href="#trust">ليه إم جولد</a></li>
       <li><a href="#gallery">معرض الصور</a></li>
       <li><a href="#motion">لقطات قريبة</a></li>
       <li><a href="#testimonials">آراء العملاء</a></li>
@@ -525,7 +526,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
 
 <section id="hero">
   <div class="hero-bg">
-    <img src="./images/background.jpeg" alt="فاترينة جولد هاوس بالدهب" loading="eager">
+    <img src="./images/background.jpeg" alt="فاترينة إم جولد بالدهب" loading="eager">
   </div>
   <canvas id="gold-canvas"></canvas>
   <div class="hero-vignette"></div>
@@ -569,7 +570,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <div class="metric-label">نقاء الدهب</div>
       </div>
       <div class="metric">
-        <div class="metric-val">+<span class="counter" data-target="4">0</span></div>
+        <div class="metric-val">+<span class="counter" data-target="5">0</span></div>
         <div class="metric-label">مجموعات</div>
       </div>
       <div class="metric">
@@ -599,10 +600,10 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
   <div class="container">
     <div class="about-grid">
       <div class="reveal">
-        <div class="eyebrow">عن جولد هاوس</div>
+        <div class="eyebrow">عن إم جولد</div>
         <h2 class="section-h2">هنا الدهب<br>بيبقى <em>فن</em>.</h2>
         <div class="about-body" style="margin-top:32px;">
-          <p>جولد هاوس محل دهب في الجيزة، بيقدملك قطع فاخرة ومختارة بعناية بعيار 18K و21K و24K — من الخواتم والحلقان لحد السلاسل والأساور.</p>
+          <p>إم جولد محل دهب في الجيزة حدائق الاهرام، بيقدملك قطع فاخرة ومختارة بعناية بعيار 18K و21K و24K — من الخواتم والحلقان لحد السلاسل والأساور.</p>
           <p>كل قطعة عندنا بنختارها بعنينا ونجهزها بكل اهتمام بالتفاصيل، سواء تصميم كلاسيك أو خاتم بالخط العربي بنصممهولك خصيصي يحكي حكايتك.</p>
           <p>وعدنا بسيط: دهب أصلي، سعر واضح، وتجربة سهلة — من أول رسالة لحد ما تستلم قطعتك.</p>
         </div>
@@ -610,7 +611,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       <div class="reveal d2">
         <div class="about-visual">
           <div class="about-frame">
-            <img src="./images/gold-1.jpeg" alt="تفصيلة خاتم من جولد هاوس">
+            <img src="./images/gold-1.jpeg" alt="تفصيلة خاتم من إم جولد">
             <div class="about-frame-tag">قطع مختارة بعناية</div>
           </div>
           <div class="about-stats">
@@ -619,7 +620,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
               <div class="stat-l">عيارات الدهب</div>
             </div>
             <div class="stat-cell">
-              <div class="stat-n"><span class="counter" data-target="4">0</span></div>
+              <div class="stat-n"><span class="counter" data-target="5">0</span></div>
               <div class="stat-l">أقسام مجوهرات</div>
             </div>
             <div class="stat-cell">
@@ -667,8 +668,14 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       <div class="svc reveal d3">
         <div class="svc-num">04 — مجموعة</div>
         <div class="svc-icon"><i class="fas fa-circle-notch"></i></div>
-        <div class="svc-name">أساور وبنجل</div>
-        <div class="svc-desc">بنجل ملتوي، أساور سلاسل وكفّات — مريحة، متينة، ومجهزة تلمع زي المرايا.</div>
+        <div class="svc-name">أساور</div>
+        <div class="svc-desc"> أساور  — مريحة، متينة، ومجهزة تلمع زي المرايا.</div>
+      </div>
+      <div class="svc reveal">
+        <div class="svc-num">05 — مجموعة</div>
+        <div class="svc-icon"><i class="fas fa-shoe-prints"></i></div>
+        <div class="svc-name">خلاخيل</div>
+        <div class="svc-desc">خلاخيل دهب خفيفة وأنيقة، من التصاميم البسيطة لحد القطع اللي فيها تفاصيل مميزة — مريحة للبس اليومي.</div>
       </div>
     </div>
 
@@ -707,7 +714,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
   <div class="container">
     <div class="reveal">
       <div class="eyebrow">ثقتك أهم حاجة عندنا</div>
-      <h2 class="section-h2">ليه تختار <em>جولد هاوس</em>؟</h2>
+      <h2 class="section-h2">ليه تختار <em>إم جولد</em>؟</h2>
       <p class="section-lead">مش بس شكل شيك — إحنا شغالين على أساس الصراحة والوضوح في كل حاجة.</p>
     </div>
     <div class="trust-grid">
@@ -739,7 +746,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       <div class="trust-card reveal d2">
         <div class="trust-card-icon"><i class="fas fa-tags"></i></div>
         <div class="trust-card-title">تسعير واضح</div>
-        <div class="trust-card-desc">بنقولك السعر من غير لف ولا دوران، وبنرد بسرعة على أي سؤال.</div>
+        <div class="trust-card-desc">بنقولك  ، وبنرد بسرعة على أي سؤال.</div>
       </div>
     </div>
   </div>
@@ -758,74 +765,61 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
     </div>
 
     <div class="gallery-filters reveal">
-      <button class="filter-btn active" data-filter="all">الكل</button>
-      <button class="filter-btn" data-filter="rings">خواتم</button>
-      <button class="filter-btn" data-filter="earrings">حلقان</button>
-      <button class="filter-btn" data-filter="necklaces">سلاسل</button>
-      <button class="filter-btn" data-filter="bracelets">أساور</button>
+      <button type="button" class="filter-btn active" data-filter="all">الكل</button>
+      <button type="button" class="filter-btn" data-filter="rings">خواتم</button>
+      <button type="button" class="filter-btn" data-filter="earrings">حلقان</button>
+      <button type="button" class="filter-btn" data-filter="necklaces">سلاسل</button>
+      <button type="button" class="filter-btn" data-filter="bracelets">أساور</button>
+      <button type="button" class="filter-btn" data-filter="anklets">خلاخيل</button>
     </div>
 
     <div class="gallery-grid reveal d1" id="galleryGrid">
-      <div class="gal" data-category="necklaces" data-name="سلسلة دهب متعددة الطبقات" data-tag="دهب فاخر" data-img="./images/gold-4.jpeg">
-        <img src="./images/gold-4.jpeg" alt="سلسلة دهب">
+      <div class="gal" data-category="bracelets" data-tag="دهب فاخر" data-img="./images/gold-4.jpeg">
+        <img src="./images/gold-4.jpeg">
+        <span class="gal-badge">أساور</span>
+        <div class="gal-cap">
+          <button type="button" class="gal-ask-btn"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="necklaces" data-tag="بالطلب" data-img="./images/gold-3.jpeg">
+        <img src="./images/gold-3.jpeg" >
         <span class="gal-badge">سلاسل</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">دهب فاخر</div>
-          <div class="gal-cap-title">سلاسل متعددة الطبقات</div>
-          <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة دهب متعددة الطبقات"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+          <button type="button" class="gal-ask-btn"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="rings" data-name="خاتم خط عربي مخصص" data-tag="بالطلب" data-img="./images/gold-3.jpeg">
-        <img src="./images/gold-3.jpeg" alt="خاتم خط عربي مخصص">
+      <div class="gal" data-category="rings"data-tag="الإطلالة اليومية" data-img="./images/gold-2.jpeg">
+        <img src="./images/gold-2.jpeg">
         <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">بالطلب</div>
-          <div class="gal-cap-title">خواتم مخصصة</div>
-          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم خط عربي مخصص"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
-        </div>
-      </div>
-      <div class="gal" data-category="earrings" data-name="حلق دروب دهب" data-tag="الإطلالة اليومية" data-img="./images/gold-2.jpeg">
-        <img src="./images/gold-2.jpeg" alt="حلق دروب دهب">
-        <span class="gal-badge">حلقان</span>
-        <div class="gal-cap">
-          <div class="gal-cap-tag">الإطلالة اليومية</div>
-          <div class="gal-cap-title">حلق دروب</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق دروب دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="bracelets" data-name="بنجل دهب" data-tag="قطعة مميزة" data-img="./images/gold-5.jpeg">
-        <img src="./images/gold-5.jpeg" alt="بنجل دهب">
-        <span class="gal-badge">أساور</span>
+      <div class="gal" data-category="rings"  data-tag="قطعة مميزة" data-img="./images/gold-5.jpeg">
+        <img src="./images/gold-5.jpeg" >
+        <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">قطعة مميزة</div>
-          <div class="gal-cap-title">بنجل</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن بنجل دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="earrings" data-name="حلق سلسلة دهب" data-tag="توقيعنا المميز" data-img="./images/gold-6.jpeg">
-        <img src="./images/gold-6.jpeg" alt="حلق سلسلة دهب">
+      <div class="gal" data-category="earrings" data-tag="توقيعنا المميز" data-img="./images/gold-6.jpeg">
+        <img src="./images/gold-6.jpeg">
         <span class="gal-badge">حلقان</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">توقيعنا المميز</div>
-          <div class="gal-cap-title">حلق سلسلة</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق سلسلة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="bracelets" data-name="سوار سلسلة دهب" data-tag="الإطلالة اليومية" data-img="./images/gold-7.jpeg">
-        <img src="./images/gold-7.jpeg" alt="سوار سلسلة دهب">
-        <span class="gal-badge">أساور</span>
+      <div class="gal" data-category="necklaces" data-tag="الإطلالة اليومية" data-img="./images/gold-7.jpeg">
+        <img src="./images/gold-7.jpeg">
+        <span class="gal-badge">سلاسل</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">الإطلالة اليومية</div>
-          <div class="gal-cap-title">سوار سلسلة</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن سوار سلسلة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="necklaces" data-name="قلادة دهب" data-tag="دهب فاخر" data-img="./images/gold-9.jpeg">
-        <img src="./images/gold-9.jpeg" alt="قلادة دهب">
-        <span class="gal-badge">سلاسل</span>
+      <div class="gal" data-category="earrings"  data-tag="دهب فاخر" data-img="./images/gold-9.jpeg">
+        <img src="./images/gold-9.jpeg" >
+        <span class="gal-badge">حلقان</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">دهب فاخر</div>
-          <div class="gal-cap-title">قلادة دهب</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن قلادة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
@@ -833,71 +827,55 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <img src="./images/gold-10.jpeg" alt="خاتم دهب كلاسيك">
         <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">الإطلالة اليومية</div>
-          <div class="gal-cap-title">خاتم كلاسيك</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم دهب كلاسيك"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="earrings" data-name="حلق استادز دهب" data-tag="الإطلالة اليومية" data-img="./images/gold-11.jpeg">
-        <img src="./images/gold-11.jpeg" alt="حلق استادز دهب">
+      <div class="gal" data-category="earrings"  data-tag="الإطلالة اليومية" data-img="./images/gold-11.jpeg">
+        <img src="./images/gold-11.jpeg" >
         <span class="gal-badge">حلقان</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">الإطلالة اليومية</div>
-          <div class="gal-cap-title">حلق استادز</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق استادز دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="bracelets" data-name="كف دهب" data-tag="قطعة مميزة" data-img="./images/gold-12.jpeg">
-        <img src="./images/gold-12.jpeg" alt="كف دهب">
-        <span class="gal-badge">أساور</span>
+      <div class="gal" data-category="rings"  data-tag="قطعة مميزة" data-img="./images/gold-12.jpeg">
+        <img src="./images/gold-12.jpeg" >
+        <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">قطعة مميزة</div>
-          <div class="gal-cap-title">كف دهب</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن كف دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="necklaces" data-name="سلسلة دهب رقيقة" data-tag="الإطلالة اليومية" data-img="./images/gold-13.jpeg">
-        <img src="./images/gold-13.jpeg" alt="سلسلة دهب رقيقة">
-        <span class="gal-badge">سلاسل</span>
+      <div class="gal" data-category="rings"  data-tag="الإطلالة اليومية" data-img="./images/gold-13.jpeg">
+        <img src="./images/gold-13.jpeg" >
+        <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">الإطلالة اليومية</div>
-          <div class="gal-cap-title">سلسلة رقيقة</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة دهب رقيقة"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="rings" data-name="خاتم إيترنيتي" data-tag="دهب فاخر" data-img="./images/gold-14.jpeg">
-        <img src="./images/gold-14.jpeg" alt="خاتم إيترنيتي">
-        <span class="gal-badge">خواتم</span>
+      <div class="gal" data-category="earrings" data-tag="دهب فاخر" data-img="./images/gold-14.jpeg">
+        <img src="./images/gold-14.jpeg" >
+        <span class="gal-badge">حلقان</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">دهب فاخر</div>
-          <div class="gal-cap-title">خاتم إيترنيتي</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم إيترنيتي"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="earrings" data-name="حلق هوبس دهب" data-tag="توقيعنا المميز" data-img="./images/gold-15.jpeg">
-        <img src="./images/gold-15.jpeg" alt="حلق هوبس دهب">
+      <div class="gal" data-category="earrings"  data-tag="توقيعنا المميز" data-img="./images/gold-15.jpeg">
+        <img src="./images/gold-15.jpeg" >
         <span class="gal-badge">حلقان</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">توقيعنا المميز</div>
-          <div class="gal-cap-title">حلق هوبس</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق هوبس دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="bracelets" data-name="سوار دهب مجدول" data-tag="قطعة مميزة" data-img="./images/gold-16.jpeg">
-        <img src="./images/gold-16.jpeg" alt="سوار دهب مجدول">
-        <span class="gal-badge">أساور</span>
+      <div class="gal" data-category="earrings" data-tag="قطعة مميزة" data-img="./images/gold-16.jpeg">
+        <img src="./images/gold-16.jpeg" >
+        <span class="gal-badge">حلقان</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">قطعة مميزة</div>
-          <div class="gal-cap-title">سوار مجدول</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن سوار دهب مجدول"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="necklaces" data-name="سلسلة ميدالية دهب" data-tag="بالطلب" data-img="./images/gold-17.jpeg">
-        <img src="./images/gold-17.jpeg" alt="سلسلة ميدالية دهب">
-        <span class="gal-badge">سلاسل</span>
+      <div class="gal" data-category="earrings" data-tag="بالطلب" data-img="./images/gold-17.jpeg">
+        <img src="./images/gold-17.jpeg" >
+        <span class="gal-badge">حلقان</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">بالطلب</div>
-          <div class="gal-cap-title">سلسلة ميدالية</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة ميدالية دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
@@ -905,35 +883,27 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <img src="./images/gold-18.jpeg" alt="خاتم دهب مرصع">
         <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">قطعة مميزة</div>
-          <div class="gal-cap-title">خاتم مرصع</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم دهب مرصع"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="earrings" data-name="حلق تعليقة دهب" data-tag="توقيعنا المميز" data-img="./images/gold-19.jpeg">
+      <div class="gal" data-category="rings" data-name="حلق تعليقة دهب" data-tag="توقيعنا المميز" data-img="./images/gold-19.jpeg">
         <img src="./images/gold-19.jpeg" alt="حلق تعليقة دهب">
-        <span class="gal-badge">حلقان</span>
+        <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">توقيعنا المميز</div>
-          <div class="gal-cap-title">حلق تعليقة</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق تعليقة دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="necklaces" data-name="سلسلة دهب بحرف" data-tag="بالطلب" data-img="./images/gold-20.jpeg">
+      <div class="gal" data-category="rings" data-name="سلسلة دهب بحرف" data-tag="بالطلب" data-img="./images/gold-20.jpeg">
         <img src="./images/gold-20.jpeg" alt="سلسلة دهب بحرف">
-        <span class="gal-badge">سلاسل</span>
+        <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">بالطلب</div>
-          <div class="gal-cap-title">سلسلة بحرف</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن سلسلة دهب بحرف"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="bracelets" data-name="أسورة دهب ناعمة" data-tag="الإطلالة اليومية" data-img="./images/gold-21.jpeg">
+      <div class="gal" data-category="rings" data-name="أسورة دهب ناعمة" data-tag="الإطلالة اليومية" data-img="./images/gold-21.jpeg">
         <img src="./images/gold-21.jpeg" alt="أسورة دهب ناعمة">
-        <span class="gal-badge">أساور</span>
+        <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">الإطلالة اليومية</div>
-          <div class="gal-cap-title">أسورة ناعمة</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن أسورة دهب ناعمة"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
@@ -941,18 +911,42 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <img src="./images/gold-22.jpeg" alt="خاتم فرح دهب">
         <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">دهب فاخر</div>
-          <div class="gal-cap-title">خاتم فرح</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن خاتم فرح دهب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
-      <div class="gal" data-category="earrings" data-name="حلق دهب بسيط" data-tag="الإطلالة اليومية" data-img="./images/gold-23.jpeg">
+      <div class="gal" data-category="rings" data-name="حلق دهب بسيط" data-tag="الإطلالة اليومية" data-img="./images/gold-23.jpeg">
         <img src="./images/gold-23.jpeg" alt="حلق دهب بسيط">
-        <span class="gal-badge">حلقان</span>
+        <span class="gal-badge">خواتم</span>
         <div class="gal-cap">
-          <div class="gal-cap-tag">الإطلالة اليومية</div>
-          <div class="gal-cap-title">حلق بسيط</div>
           <button type="button" class="gal-ask-btn" aria-label="استفسر عن حلق دهب بسيط"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="anklets" data-name="خلخال دهب كلاسيك" data-tag="الإطلالة اليومية" data-img="./images/gold-24.jpeg">
+        <img src="./images/gold-24.jpeg" alt="خلخال دهب كلاسيك">
+        <span class="gal-badge">خلاخيل</span>
+        <div class="gal-cap">
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خلخال دهب كلاسيك"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="anklets" data-name="خلخال دهب مجدول" data-tag="دهب فاخر" data-img="./images/gold-25.jpeg">
+        <img src="./images/gold-25.jpeg" alt="خلخال دهب مجدول">
+        <span class="gal-badge">خلاخيل</span>
+        <div class="gal-cap">
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خلخال دهب مجدول"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>  
+      <div class="gal" data-category="anklets" data-name="خلخال دهب رفيع" data-tag="الإطلالة اليومية" data-img="./images/gold-27.jpeg">
+        <img src="./images/gold-27.jpeg" alt="خلخال دهب رفيع">
+        <span class="gal-badge">خلاخيل</span>
+        <div class="gal-cap">
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خلخال دهب رفيع"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
+        </div>
+      </div>
+      <div class="gal" data-category="anklets" data-name="خلخال دهب بالطلب" data-tag="بالطلب" data-img="./images/gold-29.jpeg">
+        <img src="./images/gold-29.jpeg" alt="خلخال دهب بالطلب">
+        <span class="gal-badge">خلاخيل</span>
+        <div class="gal-cap">
+          <button type="button" class="gal-ask-btn" aria-label="استفسر عن خلخال دهب بالطلب"><i class="fab fa-whatsapp"></i> استفسر دلوقتي</button>
         </div>
       </div>
     </div>
@@ -977,8 +971,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <span class="motion-badge">خواتم</span>
         <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
         <div class="motion-cap">
-          <div class="motion-cap-tag">بالطلب</div>
-          <div class="motion-cap-title">خاتم خط عربي، ٣٦٠°</div>
+          <div class="motion-cap-tag">قطعة مميزة</div>
         </div>
       </div>
       <div class="motion-card" data-video>
@@ -987,8 +980,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <span class="motion-badge">سلاسل</span>
         <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
         <div class="motion-cap">
-          <div class="motion-cap-tag">دهب فاخر</div>
-          <div class="motion-cap-title">سلسلة طبقات، لقطة مقرّبة</div>
+          <div class="motion-cap-tag">قطعة مميزة</div>
         </div>
       </div>
       <div class="motion-card" data-video>
@@ -998,7 +990,6 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
         <div class="motion-cap">
           <div class="motion-cap-tag">قطعة مميزة</div>
-          <div class="motion-cap-title">بنجل، دوران بطيء</div>
         </div>
       </div>
       <div class="motion-card" data-video>
@@ -1008,17 +999,15 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
         <div class="motion-cap">
           <div class="motion-cap-tag">قطعة مميزة</div>
-          <div class="motion-cap-title">بنجل، دوران بطيء</div>
         </div>
       </div>
       <div class="motion-card" data-video>
-        <video src="./Videos/v-6.mp4" muted loop playsinline autoplay></video>
+        <video src="./Videos/v-8.mp4" muted loop playsinline autoplay></video>
         <div class="motion-glow"></div>
         <span class="motion-badge">أساور</span>
         <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
         <div class="motion-cap">
           <div class="motion-cap-tag">قطعة مميزة</div>
-          <div class="motion-cap-title">بنجل، دوران بطيء</div>
         </div>
       </div>
       <div class="motion-card" data-video>
@@ -1028,11 +1017,36 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
         <div class="motion-cap">
           <div class="motion-cap-tag">قطعة مميزة</div>
-          <div class="motion-cap-title">بنجل، دوران بطيء</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-7.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">أساور</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">قطعة مميزة</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-6.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">أساور</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">قطعة مميزة</div>
+        </div>
+      </div>
+      <div class="motion-card" data-video>
+        <video src="./Videos/v-9.mp4" muted loop playsinline autoplay></video>
+        <div class="motion-glow"></div>
+        <span class="motion-badge">أساور</span>
+        <button class="motion-toggle" aria-label="تشغيل الصوت"><i class="fas fa-volume-mute"></i></button>
+        <div class="motion-cap">
+          <div class="motion-cap-tag">قطعة مميزة</div>
         </div>
       </div>
     </div>
-    <p class="motion-note">دوس على أيقونة السماعة عشان تشغّل الصوت. غيّر روابط الفيديوهات بفيديوهات منتجاتك الحقيقية عشان القسم ده يشتغل.</p>
   </div>
 </section>
 
@@ -1051,7 +1065,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
     <div class="testimonial-grid reveal d1">
       <figure class="testi-card">
         <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
-        <div class="testi-shot"><img src="./images/feedback-1.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <div class="testi-shot"><img src="./images/feedback-1.jpeg" alt="رأي عميل عن إم جولد" loading="lazy"></div>
         <figcaption class="testi-cap">
           <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
           <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
@@ -1059,7 +1073,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       </figure>
       <figure class="testi-card">
         <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
-        <div class="testi-shot"><img src="./images/feedback-2.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <div class="testi-shot"><img src="./images/feedback-2.jpeg" alt="رأي عميل عن إم جولد" loading="lazy"></div>
         <figcaption class="testi-cap">
           <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
           <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
@@ -1067,7 +1081,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       </figure>
       <figure class="testi-card">
         <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
-        <div class="testi-shot"><img src="./images/feedback-3.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <div class="testi-shot"><img src="./images/feedback-3.jpeg" alt="رأي عميل عن إم جولد" loading="lazy"></div>
         <figcaption class="testi-cap">
           <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
           <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
@@ -1075,7 +1089,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       </figure>
       <figure class="testi-card">
         <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
-        <div class="testi-shot"><img src="./images/feedback-4.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <div class="testi-shot"><img src="./images/feedback-4.jpeg" alt="رأي عميل عن إم جولد" loading="lazy"></div>
         <figcaption class="testi-cap">
           <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
           <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
@@ -1083,7 +1097,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       </figure>
       <figure class="testi-card">
         <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
-        <div class="testi-shot"><img src="./images/feedback-5.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <div class="testi-shot"><img src="./images/feedback-5.jpeg" alt="رأي عميل عن إم جولد" loading="lazy"></div>
         <figcaption class="testi-cap">
           <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
           <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
@@ -1091,7 +1105,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       </figure>
       <figure class="testi-card">
         <div class="testi-quote"><i class="fas fa-quote-right"></i></div>
-        <div class="testi-shot"><img src="./images/feedback-6.jpeg" alt="رأي عميل عن جولد هاوس" loading="lazy"></div>
+        <div class="testi-shot"><img src="./images/feedback-6.jpeg" alt="رأي عميل عن إم جولد" loading="lazy"></div>
         <figcaption class="testi-cap">
           <span class="testi-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
           <span class="testi-src"><i class="fab fa-whatsapp"></i> من واتساب</span>
@@ -1139,7 +1153,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
               <div class="cinfo-val">
                 <a href="https://www.google.com/maps?q=29.96368408203125,31.104936599731445&z=17&hl=ar" target="_blank" class="location-link">
                   <i class="fas fa-map-pin"></i>
-                  حدائق الأهرام، البوابة الثانية، 185 ح<br>
+              حدائق الأهرام، البوابة الثانية، 185 هـ<br>
                   <span class="text-small opacity-60">الجيزة، مصر</span>
                 </a>
               </div>
@@ -1170,7 +1184,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         </div>
       </div>
       <div class="contact-cta reveal d2">
-        <h3>اتسوق مع <em>جولد هاوس</em></h3>
+        <h3>اتسوق مع <em>إم جولد</em></h3>
         <p>سواء عايز قطعة بسيطة تلبسها كل يوم، أو تصميم خاص بالخط العربي — كلمنا وهنساعدك تلاقي (أو نصمملك) القطعة المناسبة.</p>
         <a href="https://wa.me/201285440450" class="wa-btn" target="_blank">
           <i class="fab fa-whatsapp"></i> كلمنا على واتساب
@@ -1183,7 +1197,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
         </div>
         <div class="trust-tags">
           <div class="trust-tag">دهب أصلي على طول</div>
-          <div class="trust-tag">سعر واضح ومفيش لف ودوران</div>
+          <div class="trust-tag">سعر واضح </div>
           <div class="trust-tag">خدمة مخصصة ليك</div>
         </div>
       </div>
@@ -1192,7 +1206,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
     <div class="contact-map reveal">
       <div class="contact-map-label"><i class="fas fa-map-marker-alt"></i> مكانا على الخريطة</div>
       <div class="contact-map-frame">
-        <iframe src="https://www.google.com/maps?q=29.96368408203125,31.104936599731445&z=17&hl=ar&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="موقع جولد هاوس على الخريطة"></iframe>
+        <iframe src="https://www.google.com/maps?q=29.96368408203125,31.104936599731445&z=17&hl=ar&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="موقع إم جولد على الخريطة"></iframe>
       </div>
     </div>
   </div>
@@ -1203,9 +1217,9 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
     <div class="footer-top">
       <div>
         <div class="footer-brand">
-          <img src="./images/logo.jpg" alt="جولد هاوس">
+          <img src="./images/logo-2.png" alt="إم جولد">
           <div>
-            <div class="footer-brand-name">GOLD <em>HOUSE</em></div>
+            <div class="footer-brand-name">M <em>GOLD</em></div>
             <div class="footer-brand-sub">مجوهرات دهب فاخرة — 18K · 21K · 24K</div>
           </div>
         </div>
@@ -1232,7 +1246,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2026 جولد هاوس. جميع الحقوق محفوظة.</div>
+      <div class="footer-copy">© 2026 إم جولد. جميع الحقوق محفوظة.</div>
       <div class="footer-note">الجيزة، مصر</div>
     </div>
   </div>
@@ -1414,13 +1428,13 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       const f = btn.dataset.filter;
       galItems.forEach(g => {
         const show = f === 'all' || g.dataset.category === f;
-        g.style.display = show ? '' : 'none';
+        g.classList.toggle('gal-hide', !show);
       });
     });
   });
 
   /* ============ PRODUCT MODAL ============ */
-  const categoryLabels = { rings: 'خواتم', earrings: 'حلقان', necklaces: 'سلاسل', bracelets: 'أساور وبنجل' };
+  const categoryLabels = { rings: 'خواتم', earrings: 'حلقان', necklaces: 'سلاسل', bracelets: 'أساور', anklets: 'خلاخيل' };
   const specsByCategory = {
     rings: [
       ['المقاسات المتاحة', 'حسب الطلب'],
@@ -1434,6 +1448,10 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       ['الوزن التقريبي', 'يُحدَّد حسب التصميم']
     ],
     bracelets: [
+      ['المقاس', 'قابل للتعديل'],
+      ['الوزن التقريبي', 'يُحدَّد حسب التصميم']
+    ],
+    anklets: [
       ['المقاس', 'قابل للتعديل'],
       ['الوزن التقريبي', 'يُحدَّد حسب التصميم']
     ]
@@ -1468,7 +1486,7 @@ footer{background:#050302;border-top:1px solid var(--border);padding:64px 0 36px
       `<div class="spec-row"><span class="spec-label">${label}</span><span class="spec-value">${value}</span></div>`
     ).join('');
 
-    const waText = encodeURIComponent(`أهلاً، حابب أسأل عن: ${name}`);
+    const waText = encodeURIComponent('أهلاً، حابب أستفسر عن حاجة من مجوهراتكم.');
     pmWa.href = `https://wa.me/201285440450?text=${waText}`;
 
     modal.classList.add('open');
